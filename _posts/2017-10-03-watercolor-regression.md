@@ -11,7 +11,7 @@ I first saw a watercolour regression in a paper by my colleague Andrea Staid on 
 She had this neat figure here which shows a probabilistic prediction band:
 <img class ="image" src="/img/blog/staid.png"  width = "70%">
 I want something similar to this for a research project and came across the work of [Schönbrodt](http://www.nicebread.de/visually-weighted-watercolor-plots-new-variants-please-vote/) and [Hsiang](http://www.fight-entropy.com/2012/08/watercolor-regression.html).
-<p class ="image cent">
+<p align="center">
   <img src = '/img/blog/schonbrodt.jpeg' width="40%">
   <img src = '/img/blog/schonbrodt_2.jpeg' width="40%">
 </p>
@@ -27,10 +27,10 @@ I'm going to start off easy and not run any regression.
   Option 1 (Top left) uses the colour palette from Schönbrodt's figures. It has three distinct, albeit similar colours.
   The second option uses different transparencies of the same colour.
   The final option reverts the scatter points to their default style provided through the style context option - using this approach will ensure consistency between figures.
-
-  <img align="center" src = '/img/blog/fig1.png' width="30%">
-  <img align="center" src = '/img/blog/fig2.png' width="30%">
-
+<p align="center">
+  <img align="center" src = '/img/blog/fig1.png' width="40%">
+  <img align="center" src = '/img/blog/fig2.png' width="40%">
+</p>
 <img class ="image" src="/img/blog/fig3.png"  width = "70%">
 
 If this is of use to anyone, the code is on my [github](https://github.com/tommlogan/watercolor).
