@@ -1,0 +1,102 @@
+---
+layout: default
+---
+	<body class="no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">ADAPTING <span>CITIES</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Welcome</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2>Evaluating urban accessibility</h2>
+						<p><a href="http://tomlogan.co.nz">T. M. Logan</a>, <a href="http://timwilliams.kiwi">T. G. Williams</a>, A. J. Nisbet, K. D. Liberman, C. T. Zuo, S. D. Guikema </p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+									<section>
+										<pright><a href="http://journals.sagepub.com/doi/10.1177/2399808317736528">Journal article</a></pright>
+										<pright>How to <a href = 'http://tomlogan.co.nz/blogs/querying_OSRM.html'> setup OSRM </a> </pright>
+										<q> <b> Imagine a vibrant and healthy city. </b><br>
+										Is it one where you, your children, and your grandparents have access to the things you need?</q>
+										<iframe src="https://tomlogan.shinyapps.io/baltimore_access/", width = 100%, height= "800"> </iframe>
+
+										<h2> Why accessibility? </h2>
+										<p>
+											<img class ="image" src="img/access/elderly.jpeg" align="right", width = "40%">
+											Things like green spaces, supermarkets, health care, and schools are super important for a city’s residents.
+											Good access to these services promotes (among other things): active and sustainable forms of transportation; community interaction; good nutrition; and health and well-being.
+											<br><br>
+											Others have explored access in cities.
+
+											They looked at inequities of access between different demographics and social groups, often finding that socially and economically disadvantaged populations are worse off.
+											These vulnerable people may not have access to cars or other resources to reach far-flung destinations. This makes them the most vulnerable to urban form.
+											<q> We need to quantify accessibility so we can fix these issues. <q>
+										</p>
+										<h2> What we did? </h2>
+										<p>
+											We developed an approach to measure <i> proximity </i> to urban services.
+											Proximity is the distance or duration to a service and is an important factor of accessibility.
+											Our approach improves on others by:
+										</p>
+										<ol type="1">
+											<li>Calculating proximity at the building level, rather than at an aggregated level (e.g. census tract). </li>
+											<li>Using network distance, rather than straight-line buffers.</li>
+											<li>Utilizing open (publicly available) data, rather than potentially outdated or private datasets.</li>
+											<li>Presenting and analyzing the entire distribution of access, rather than imposing a (somewhat arbitrary) distance or time threshold or calculatig single statistic.</li>
+											<li>Calculating travel distance and time for walking, cycling, or driving.</li>
+										</ol>
+										<p>
+											The results generated can accurately identify the vulnerable populations, and present an unbiased picture of city-wide accessibility.
+											Additionally, our approach is scalable and can be easily applied to multiple different cities or regions.
+										</p>
+										<p>
+											We demonstrate the ease and applicability of our approach by calculating proximity to green spaces, supermarkets, high schools, and hospitals in the cities of Chicago, Baltimore, and Detroit.
+											We compare the results to those generated using other methods, highlighting the enhanced insight.
+										</p>
+										<h2>What do our results show?</h2>
+										<p>
+											The results generated in our analysis can be used to plot empirical cumulative distribution functions (ECDFs) and maps of the spatial distribution of accessibility throughout a city (shown above).
+										</p>
+										<h3> ECDFs </h3>
+										<p>
+											<img class ="image" src="img/access/supermarket_bal_det.jpg" align="left", width = "50%">
+											ECDFs show us the entire distribution of proximity throughout a city or multiple cities.
+											They remove the need for an arbitrary threshold that reduces accessibility into a "access-or-not" metric.
+											By very definition, imposing a threshold ignores the proximity of all residents greater than this threshold.
+											<q> <b>Often these are the residents we're trying to identify and assist. </b><q>
+										</p>
+										<br>
+										<div class='clear'>
+											<h3> Spatial maps</h3>
+										</div>
+										<p>
+											Spatial maps of accessibility show which areas of a city need attention.
+											Analysis that calculate accessibility at aggregated units (e.g. census tracts or neigbourhoods) are subject to the modifiable areal unit problem (MAUP), from imposing arbitary boundaries.
+											We calculate accessibility at the building-level, so our results are independent of these boundaries.
+											Additionally, analysis using large spatial areas assume that the access from the center of each area is representative of the entire population within it.
+											This is rarely the case.
+											If necessary, results from our method can be aggregated up to a desired spatial size.
+										</p>
+										<q> To read our paper, <a href="http://journals.sagepub.com/doi/10.1177/2399808317736528">click here</a> </q>
+										<q> Instructions on setting up OSRM, the network distance calculator we used in our model, can be found <a href = 'http://tomlogan.co.nz/blogs/querying_OSRM.html'> here. </a> </q>
+										<br>
+										<img class ="image" src="img/access/crowd_walk.jpeg" align="center", width = "100%">
+
+									</section>
+								</div>
+
+						</section>

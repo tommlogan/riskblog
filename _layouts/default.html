@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ site.tile }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/img/favicon.ico">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/custom.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- <script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
+			</script> -->
+
+	</head>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		{% include header.html %}
+	</header>
+
+	<body class="index">
+		<div id="page-wrapper">
+
+
+
+			<!-- Banner -->
+				<section id="banner">
+					<!-- <div class="inner"> -->
+						<header>
+							<img class ="image" src="img/logo_white.png" width=10% />
+							<h2>BLOG <strong>NAME</strong></h2>
+							<p>A risk and science blog by <a href="http://tomlogan.co.nz" class='banner'>Tom Logan</a> and <a href="http://timwilliams.kiwi" class='banner'>Tim Williams</a></p>
+						</header>
+					<!-- </div> -->
+				</section>
+
+				<!-- Main -->
+				<article id="main">
+
+					<div class="content">
+						<section>
+
+							{{ content }}
+
+						</section>
+					</div>
+
+				</article>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<!-- <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li> -->
+						<li><a href="https://scholar.google.co.nz/citations?hl=en&view_op=list_works&gmla=AJsN-F7ua45BO8i1DHccKCUj7VPZqMzoZxfTFasDQNl2_V7GtlfsDKuC70DN5-8fIn8VadBbpoEfmI9BTw5FwKbSHXWa_N0IKA&user=NqnK14EAAAAJ" target="_blank" class="icon circle fa-graduation-cap"><span class="label">Google</span></a></li>
+						<li><a href="https://github.com/tommlogan" target="_blank" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+					</ul>
+
+					<ul class="copyright">
+						<li>Copyright &copy; 2018 Tom Logan & Tim Williams - All Rights Reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP: Twenty</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+			<!-- {% if jekyll.environment == 'production' %}
+		  {% include analytics.html %}
+		  {% endif %} -->
+	</body>
+</html>

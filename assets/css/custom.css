@@ -1,0 +1,25 @@
+
+	q {
+	text-align: center;
+	display: block
+	}
+
+
+	j {
+	text-align: justify;
+	display: block;
+  margin: 0 0 2em 0;
+	}
+
+
+/* Banner */
+
+  /* hyperlinks */
+  .banner {
+        border-bottom: none;
+        color: inherit;
+  }
+  .banner:hover {
+        border-bottom: none;
+        color: #3fb1a3;
+  }

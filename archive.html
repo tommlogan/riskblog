@@ -1,0 +1,33 @@
+---
+layout: default
+---
+	<body class="no-sidebar">
+		<div id="page-wrapper">
+
+
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2>Archive</h2>
+						<!-- <p>T. M. Logan, T. G. Williams, A. J. Nisbet, K. D. Liberman, C. T. Zuo, S. D. Guikema </p> -->
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+									{% for post in site.posts %}
+									<section>
+										<q> <b> <a href="{{ post.url }}">{{ post.title }}</a></b></q>
+										<q>{{ post.excerpt }}</q>
+										<q>Authors: Tim Williams, Tom Logan</q>
+										<q>{{ post.date | date: "%-d %B %Y" }}</q>
+									</section>
+									{% endfor %}
+									<hr width="300">
+								</div>
+
+						</section>
