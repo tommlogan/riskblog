@@ -12,7 +12,7 @@ Is it one where you, your children, and your grandparents have access to the thi
 {% include urban-access-map.html %}
 
 ## Why accessibility?
-<img class ="image" src="/img/access/elderly.jpeg" width = "40%">
+<img align="right" class ="image" src="/img/access/elderly.jpeg" width = "40%">
 
 Things like green spaces, supermarkets, health care, and schools are super important for a city’s residents.
 Good access to these services promotes (among other things): active and sustainable forms of transportation; community interaction; good nutrition; and health and well-being.
@@ -46,7 +46,7 @@ The results generated in our analysis can be used to plot empirical cumulative d
 
 ### ECDFs
 
-<img class ="image" src="/img/access/supermarket_bal_det.jpg" width = "50%">
+<img align="left" class ="image" src="/img/access/supermarket_bal_det.jpg" width = "60%">
 
 ECDFs show us the entire distribution of proximity throughout a city or multiple cities.
 They remove the need for an arbitrary threshold that reduces accessibility into a "access-or-not" metric.
@@ -63,8 +63,8 @@ Additionally, analysis using large spatial areas assume that the access from the
 This is rarely the case.
 If necessary, results from our method can be aggregated up to a desired spatial size.
 
-To read our [paper click here](http://journals.sagepub.com/doi/10.1177/2399808317736528)
+To read our [paper click here.](http://journals.sagepub.com/doi/10.1177/2399808317736528)
 
-Instructions on setting up OSRM, the network distance calculator we used in our model, can be found <a href = 'http://tomlogan.co.nz/blogs/querying_OSRM.html'> here. </a>
+Instructions on setting up OSRM, the network distance calculator we used in our model, can be found [here]('http://tomlogan.co.nz/blogs/querying_OSRM.html').
 
 <img class ="image" src="/img/access/crowd_walk.jpeg" width = "100%">

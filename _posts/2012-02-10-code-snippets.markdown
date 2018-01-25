@@ -11,3 +11,11 @@ Whenever you need to post a code snippet, use the liquid tags `highlight` and `e
 # some code goes here
 puts "Hello World!"
 {% endhighlight %}
+
+Now for some python
+
+{% highlight python %}
+def foo:
+    x = 5
+    return(x)
+{% endhighlight %}

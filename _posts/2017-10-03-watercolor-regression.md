@@ -28,10 +28,9 @@ I'm going to start off easy and not run any regression.
   The second option uses different transparencies of the same colour.
   The final option reverts the scatter points to their default style provided through the style context option - using this approach will ensure consistency between figures.
 
-<div class="cent">
-  <img src = '/img/blog/fig1.png' width="30%">
-  <img src = '/img/blog/fig2.png' width="30%">
-</div>
+  <img align="center" src = '/img/blog/fig1.png' width="30%">
+  <img align="center" src = '/img/blog/fig2.png' width="30%">
+
 <img class ="image" src="/img/blog/fig3.png"  width = "70%">
 
 If this is of use to anyone, the code is on my [github](https://github.com/tommlogan/watercolor).
