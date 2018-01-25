@@ -1,5 +1,7 @@
 ---
 layout: default
+title: index
+banner: true
 ---
 
 <!-- Header -->
@@ -7,57 +9,15 @@ layout: default
 
 
 			<!-- Main -->
-				<article id="main">
-				<header class="special container">
-						Our world is changing and our cities must <strong> adapt </strong>.
-						<br />
-						Our research analyses cities as complex systems and how they can mitigate their risks.
-					</header>
-
-					<!-- Projects -->
-						<section class="wrapper style3 container ", id = "research">
-
-							<header class="major title">
-								<h2>OUR <strong>RESEARCH</strong></h2>
-							</header>
-
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<img class ="image featured research" src="img/access.jpeg" alt="" />
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-
-											<h3>Measuring access</h3>
-
-										<p>Our future cities must be walkable. Quantifying that is the challenge.</p>
-										<a class="bigg-read-more" href="city_access.html">More Info</a>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-
-								<div class="6u 21u(narrower)">
-
-									<section>
-										<img class ="image featured research" src="img/green_space.jpeg" alt="" />
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-									<section>
-
-											<h3>City green space</h3>
-
-										<p>Green space benefits communities health, cohesion, and natural environment. How do our cities rank?</p>
-									</section>
-								</div>
-							</div>
-						</section>
-				</article>
+			<!-- This loops through the paginated posts -->
+		{% for post in pagination.posts %}
+		  <section class="wrapper style1 container special text">
+		    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		    <div class="post-meta">
+		      <span><i class="fa fa-user"></i> {{ post.author }} <i class="fa fa-calendar"></i> {{ post.date | date: "%d %B %Y" }}{% if post.categories %}{% endif %}</span>
+		    </div>
+		    <div>
+		      <p>{{ post.excerpt }}</p>
+		    </div>
+		  </section>
+		{% endfor %}

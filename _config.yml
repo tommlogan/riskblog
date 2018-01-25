@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Adapting Cities
+title: Blog name
 email: tomlogan@umich.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Research to understand how to adapt our cities for a sustainable future
@@ -30,3 +30,7 @@ scholar_username: NqnK14EAAAAJ
 # destination: /blogs
 markdown: kramdown
 highlighter: rouge
+
+# Plugins
+paginate: 7
+paginate_path: "/page/:num/"

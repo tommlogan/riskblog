@@ -4,22 +4,69 @@
 	display: block
 	}
 
-
-	j {
-	text-align: justify;
-	display: block;
-  margin: 0 0 2em 0;
-	}
+.cent {
+	display: inline;
+	float: none;
+}
 
 
 /* Banner */
-
+	#header {
+		background: #000;
+	}
+	#header h1, a, span {
+		vertical-align: top;
+	}
+	#header h1, nav {
+		color: #fff;
+	}
+	#header img {
+		padding: 0.5em 0;
+	}
   /* hyperlinks */
   .banner {
-        border-bottom: none;
+        /* border-bottom: none; */
         color: inherit;
   }
   .banner:hover {
         border-bottom: none;
         color: #3fb1a3;
   }
+
+/* Content */
+
+	.text p{
+		text-align: justify;
+	}
+
+	.text a{
+		text-align: left;
+		border-bottom: dotted 1px;
+	}
+
+	.text h1{
+		text-align: left;
+	}
+
+	.text a:hover{
+		color: #3fb1a3;
+	}
+
+	.post-meta {
+		margin: 1em 0;
+		text-align: left;
+	}
+
+	.fa {
+		margin: 0 0.3em;
+	}
+
+/* Footer */
+#footer {
+	padding: 2em;
+}
+
+/* Post */
+.post h2 {
+	color: #000;
+}

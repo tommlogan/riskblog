@@ -1,8 +1,11 @@
 ---
 layout: post
-excerpt: The City of Seattle flew us over to act as mentors for a Civic Hacking weekend focused on urban accessibility for senior citizens
+title:  "Civic Hacking Trip to Seattle"
+author: Tim Williams and Tom Logan
+excerpt: The City of Seattle flew us over to act as mentors for a Civic Hacking weekend focused on urban accessibility for senior citizens.
+date:   2017-10-13
+categories: service
 comments: true
-additional_info: 2017-10-13-seattle.html
 ---
 
 <img src="/img/blog/IMG_2166-EFFECTS.jpg" width = "100%">

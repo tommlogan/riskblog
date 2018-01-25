@@ -1,66 +1,42 @@
 ---
 layout: default
+banner: false
 ---
 <!-- Header -->
 <header id="header">
 	{% include header.html %}
 </header>
 
-	<body class="left-sidebar">
-		<div id="page-wrapper">
+<header class="special container post">
+	<!-- <span class="icon fa-laptop"></span> -->
+	<h2><strong>{{ page.title }}</strong></h2>
+</header>
+<header class="container post">
+	<p><i class="fa fa-user"></i> {{ page.author }} <i class="fa fa-calendar"></i> {{ page.date | date: "%d %B %Y" }}</p>
+</header>
 
+<!-- One -->
+<section class="wrapper style1 container">
+	{{ content }}
 
+		{% include disqus.html %}
 
-			<!-- Main -->
-			<article id="main">
-
-				<header class="special container">
-					<!-- <span class="icon fa-laptop"></span> -->
-					<h2>{{ page.title }}</h2>
-					<p>{{ page.excerpt }}</p>
-					{{ page.date | date: "%d %B %Y" }}
-				</header>
-
-				<!-- One -->
-					<section class="wrapper style4 container">
-
-						<div class="row 150%">
-							<div class="4u 12u(narrower)">
-
-								<!-- Sidebar -->
-									<div class="sidebar">
-										<section>
-											<header>
-												<h3>Authors</h3>
-											</header>
-											<img class ="research-thumbnail" src="img/tlogan.jpg" title="Tom Logan" width="140" height=100% style="left"> <img class ="research-thumbnail" src="/img/twilliams.jpg" title="Tim Williams" width="140" height=100% style="float:right">
-											<br>
-											<div style="float:left"> <a href = 'http://tomlogan.co.nz'> Tom Logan </a>	</div>
-											<div style="float:right"> <a href = 'http://timwilliams.kiwi'> Tim Williams </a></div>
-										</section>
-
-									</div>
-
-							</div>
-							<div class="8u 12u(narrower) important(narrower)">
-
-								<!-- Content -->
-									<div class="content">
-										<section>
-
-                      {{ content }}
-
-										</section>
-									</div>
-
-							</div>
-						</div>
-					<!-- </section> -->
-
-				<!-- Two -->
-					<!-- <section class="wrapper style1 container special"> -->
-						<!-- {% include {{ page.additional_info }} %}
-						{% include disqus.html %} -->
-					</section>
-
+		{% if page.previous.url or page.next.url %}
+		<hr />
+		<div class="row">
+			<article class="6u 12u(narrower)">
+				{% if page.previous.url %}
+				<h3>Previous</h3>
+				<p><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
+				{% endif %}
 			</article>
+			<article class="6u 12u(narrower)">
+				{% if page.next.url %}
+				<h3>Next</h3>
+				<p><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
+
+				{% endif %}
+			</article>
+		</div>
+		{% endif %}
+	</section>

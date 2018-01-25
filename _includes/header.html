@@ -1,10 +1,10 @@
-<h1 id="logo"><a href="index.html">Tim's <span>Name</span></a></h1>
-<!-- <h1 id="logo"><img src="img/logo_black.png" width=3% /></h1> -->
+<h1 id="logo"><img src="/img/logo_person_white.png" width=1% /> <a href="/index.html"> Blog <span>Name</span></a></h1>
+
 <nav id="nav">
   <ul>
-    <li class="current"><a href="index.html">Home</a></li>
+    <li class="{% if page.title == 'index' %}current{% endif %}"><a href="/index.html">Home</a></li>
     <!-- <li ><a href="#research">Research</a></li> -->
-    <li ><a href="about.html">About</a></li>
-    <li ><a href="archive.html">Archive</a></li>
+    <li class="{% if page.title == 'about' %}current{% endif %}"><a href="/about.html">About</a></li>
+    <li class="{% if page.title == 'archive' %}current{% endif %}"><a href="/archive.html">Archive</a></li>
   </ul>
 </nav>
