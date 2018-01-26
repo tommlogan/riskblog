@@ -9,10 +9,19 @@
 	float: center;
 }
 
+body {
+	/* color: #000; */
+}
+
+p {
+	color: #000;
+}
+
 
 /* Banner */
 	#header {
 		background: #000;
+		color: #fff;
 	}
 	#header h1, a, span {
 		vertical-align: top;
@@ -24,41 +33,60 @@
 		padding: 0.5em 0;
 	}
   /* hyperlinks */
-  .banner {
+  .banner a.{
         /* border-bottom: none; */
         color: inherit;
   }
-  .banner:hover {
+  .banner a:hover {
         border-bottom: none;
-        color: #3fb1a3;
+        color: #46bece;
   }
+
+	#banner p{
+		margin: 0;
+		color: #fff;
+	}
+
 
 /* Content */
 
 	.text p{
 		text-align: justify;
+		color: #000;
 	}
 
 	.text a{
 		text-align: left;
 		border-bottom: dotted 1px;
+
 	}
+
+
 
 	.text h1{
 		text-align: left;
 	}
 
 	.text a:hover{
-		color: #3fb1a3;
+		color: #46bece;
+		border-bottom: none;
 	}
 
-	.post-meta {
-		margin: 1em 0;
-		text-align: left;
-	}
 
 	.fa {
 		margin: 0 0.3em;
+	}
+
+	.post-title {
+		font-weight: bold;
+		color: #46bece
+	}
+
+	.post-meta {
+		color: #000;
+		font-size: 75%;
+		text-align: left;
+		margin-top: -2em;
 	}
 
 /* Footer */
