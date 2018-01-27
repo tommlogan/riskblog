@@ -2,7 +2,7 @@
 layout: post
 title:  "You've got the power - published in Nature"
 author: Tom Logan and James Arnott
-excerpt: If you're institution won't break down barriers for you, do it yourself
+excerpt: If you're institution won't break down barriers for you, do it yourself.
 date:   2017-11-22
 categories: comment
 comments: true
@@ -12,13 +12,13 @@ comments: true
 
 >*If your institution won't break down barriers for you, do it yourself.*
 
-**Tom Logan, James Arnott, Katherine Brown, K Arthur Endsley, Michael Lerner, Sara Meerow, Lizz Ultee, and Tim Williams**
+**Katherine Brown, K Arthur Endsley, Michael Lerner, Sara Meerow, Lizz Ultee, and Tim Williams all contributed to this article**
 
 “What’s the problem?” asked a professor. “If you want to conduct interdisciplinary research with someone, just knock on their door.” But our experience as PhD candidates at the University of Michigan in Ann Arbor, where we study sustainability, suggests that bridging the ‘silos’ — doing research that crosses disciplines and engages people and organizations outside academia — is not that simple.
 
-We wanted to strengthen the impact of our research by overcoming the inertia and lack of incentives for non-conventional collaborations. So we created MUSE, the [Michigan University-wide Sustainability and Environment](https://muse-initiative.umich.edu) network. Since it began in 2014, as an informal get-together for like-minded students, MUSE has snowballed to include a biweekly research workshop, an annual conference and a growing interdisciplinary network of PhD students and postdocs.
-
 <img align="right" src = "/img/blog/the_power.jpg" width = "40%" title = "Credit: Davor Pavelic/Getty">
+
+We wanted to strengthen the impact of our research by overcoming the inertia and lack of incentives for non-conventional collaborations. So we created MUSE, the [Michigan University-wide Sustainability and Environment](https://muse-initiative.umich.edu) network. Since it began in 2014, as an informal get-together for like-minded students, MUSE has snowballed to include a biweekly research workshop, an annual conference and a growing interdisciplinary network of PhD students and postdocs.
 
 Our research examines a variety of issues, including how to make cities resilient to climate change; how developing countries can ensure food for their citizens; and how human behaviour influences the success of water-saving programmes.
 
