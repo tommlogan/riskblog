@@ -4,7 +4,7 @@ title:  "Civic Hacking Trip to Seattle"
 author: Tim Williams and Tom Logan
 excerpt: The City of Seattle flew us over to act as mentors for a Civic Hacking weekend focused on urban accessibility for senior citizens.
 date:   2017-10-13
-categories: service
+categories: outreach
 comments: true
 ---
 
