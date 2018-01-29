@@ -25,6 +25,7 @@ p {
 	}
 	#header h1, a, span {
 		vertical-align: top;
+		font-weight: 400;
 	}
 	#header h1, nav {
 		color: #fff;
@@ -67,7 +68,9 @@ p {
 
 	}
 
-
+	.container {
+		width: 70%;
+	}
 
 	.text h1{
 		text-align: left;
