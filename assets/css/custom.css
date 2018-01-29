@@ -32,6 +32,12 @@ p {
 	#header img {
 		padding: 0.5em 0;
 	}
+
+	#title-image {
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+
   /* hyperlinks */
   .banner a.{
         /* border-bottom: none; */
