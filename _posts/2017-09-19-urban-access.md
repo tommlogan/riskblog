@@ -4,7 +4,7 @@ title:  "Evaluating urban accessibility"
 author: Tom Logan and Tim Williams
 excerpt: Imagine a vibrant and healthy city. Is it one where you, your children, and your grandparents have access to the things they need?
 date:   2017-09-19
-categories: urban
+categories: research
 comments: true
 ---
 Imagine a vibrant and healthy city.
