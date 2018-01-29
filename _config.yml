@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blog name
+title: Reckoning Risk
 email: tomlogan@umich.edu
 description: >- # this means to ignore newlines until "baseurl:"
   A risk and science blog by Tom Logan and Tim Williams
