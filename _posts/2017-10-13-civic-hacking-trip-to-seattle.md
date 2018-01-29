@@ -6,6 +6,7 @@ excerpt: The City of Seattle flew us over to act as mentors for a Civic Hacking 
 date:   2017-10-13
 categories: outreach
 comments: true
+#thumbnail: "/img/blog/seattle_120.jpg"
 ---
 
 <img src="/img/blog/IMG_2166-EFFECTS.jpg" width = "100%">

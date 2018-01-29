@@ -17,6 +17,9 @@ p {
 	color: #000;
 }
 
+a {
+	color: rgb(81, 152, 57)
+}
 
 /* Banner */
 	#header {
@@ -40,9 +43,10 @@ p {
 	}
 
   /* hyperlinks */
-  .banner a.{
+  .banner a {
         /* border-bottom: none; */
-        color: inherit;
+        color: #fff;
+				font-weight: 300;
   }
   .banner a:hover {
         border-bottom: none;
@@ -86,9 +90,9 @@ p {
 		margin: 0 0.3em;
 	}
 
-	.post-title {
-		font-weight: bold;
-		color: #46bece
+	.post-title a {
+		font-weight: 1000;
+		color: rgb(81, 152, 57);
 	}
 
 	.post-meta {
@@ -96,6 +100,12 @@ p {
 		font-size: 75%;
 		text-align: left;
 		margin-top: -2em;
+	}
+
+	.post-thumbnail {
+		float: left;
+		margin-right: 1em;
+
 	}
 
 /* Footer */
