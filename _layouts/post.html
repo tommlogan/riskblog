@@ -19,22 +19,25 @@ banner: false
 <section class="wrapper style1 container">
 	{{ content }}
 
-		{% include disqus.html %}
+	{% include share_bar.html %}
+
+	{% include disqus.html %}
 
 		{% if page.previous.url or page.next.url %}
 		<hr />
 		<div class="row">
 			<article class="6u 12u(narrower)">
 				{% if page.previous.url %}
-				<h3>Previous</h3>
-				<p><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
+				<h4>Previous</h4>
+				<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
+				<p>{{page.previous.excerpt}}</p>
 				{% endif %}
 			</article>
 			<article class="6u 12u(narrower)">
 				{% if page.next.url %}
-				<h3>Next</h3>
-				<p><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
-
+				<h4>Next</h4>
+				<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
+				<p>{{page.next.excerpt}}</p>
 				{% endif %}
 			</article>
 		</div>

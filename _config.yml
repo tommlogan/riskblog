@@ -28,6 +28,7 @@ scholar_username: NqnK14EAAAAJ
 # Build settings
 # source: /_jekyll
 # destination: /blogs
+permalink: /:categories/:year/:title/
 markdown: kramdown
 highlighter: rouge
 
