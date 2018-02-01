@@ -6,6 +6,7 @@ excerpt: I've spent some time comparing Google Docs, Word, Sharelatex, and Overl
 date: 2017-03-10
 categories: research-practice
 comments: true
+sidebar_toc: true
 ---
 
 *Note: ShareLaTeX and Overleaf have announced a pending merger.*
@@ -19,11 +20,11 @@ I want a platform which does the following:
 * Secure and backed up
 * Easy citation management
 * Simple figure insertion and referencing
-* Keeps everything in one place (I don’t want documents in too many directories)  
 * Collaboration
     * Comments
     * Track changes
     * Shared
+* Keeps everything in one place (I don’t want documents in too many directories)
 
 Reasonable enough, right? The options I considered were:
 * Google Docs with Paperpile
@@ -129,7 +130,7 @@ Track changes is a little different. It requires you to save a version and then 
 <img src="/img/blog/latex-compare/overleaf-6.png">
 I think ShareLaTeX is better. But Overleaf isn’t bad.
 
-## Final Thoughts
+# Final Thoughts
 I like both. Overleaf is cool with its rich text option for sending to collaborators who want to add comments and make changes who aren’t comfortable with latex. It also provides all of these features for free, except for having private/protected files. E.g. with the right link anyone can see your paper. ShareLaTeX files are all private.
 
 ShareLaTeX is superior in it commenting and git integration and the directory structure. It’s for this reason that I’m in favor of ShareLaTeX. Overleaf is nice with its sync to Google Drive, but if you’re using git properly, git can be smoother.

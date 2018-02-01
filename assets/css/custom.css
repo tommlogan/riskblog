@@ -47,6 +47,10 @@ h4 {
 		margin-top: 1em;
 	}
 
+	#nav li {
+		color: #fff;
+	}
+
   /* hyperlinks */
   .banner a {
         /* border-bottom: none; */
@@ -150,6 +154,11 @@ h4 {
   padding: 0 2em;
 }
 
+.post li ul {
+    margin: 0;
+    /* padding: 0.2em; */
+}
+
 .post p + ul {
     margin-top: -1.5em;
 }
@@ -182,6 +191,7 @@ h4 {
 .no_space {
 	margin: 0;
 }
+
 
 
 
