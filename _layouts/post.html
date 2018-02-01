@@ -18,7 +18,28 @@ banner: false
 <!-- One -->
 
 <section class="wrapper style1 container post">
-	{{ content }}
+	{% if page.sidebar_toc %}
+		<div class="row 150%">
+			<!-- Sidebar -->
+			<div class="4u 12u(narrower)">
+					<div class="sidebar">
+							{% include toc.html html=content %}
+					</div>
+			</div>
+			<!-- Content -->
+			<div class="8u 12u(narrower) important(narrower)">
+				<div class="content">
+					<section>
+
+						{{ content }}
+
+					</section>
+				</div>
+			</div>
+		</div>
+	{% else %}
+		{{ content }}
+	{% endif %}
 
 	{% include share_bar.html %}
 

@@ -7,8 +7,6 @@ date: 2017-09-17
 categories: research-practice
 comments: true
 ---
-<!-- *(blog hosted on Tim's website)*
-<iframe width="100%" height="5000" src="http://timwilliams.kiwi/documenting-literature-reviews/" frameborder="0" allowfullscreen></iframe> -->
 
 [Click here to download our spreadsheet](/reading_list.xlsm)
 
