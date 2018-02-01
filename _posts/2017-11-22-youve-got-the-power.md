@@ -2,7 +2,7 @@
 layout: post
 title:  "You've got the power - published in Nature"
 author: Tom Logan and James Arnott
-excerpt: If you're institution won't break down barriers for you, do it yourself.
+excerpt: If your institution won't break down barriers for you, do it yourself.
 date:   2017-11-22
 categories: comment
 comments: true
