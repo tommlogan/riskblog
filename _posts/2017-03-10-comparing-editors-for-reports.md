@@ -109,8 +109,8 @@ Tots amazeballs.
 ### ShareLaTeX
 ShareLaTeX comments and track changes are hands down awesome.
 Select some writing and in the RHS you’ll see a little comment icon. Click it.  
-<img src="/img/blog/latex-compare/share-4.png">
-<img src="/img/blog/latex-compare/share-5.png">  
+<img src="/img/blog/latex-compare/share-4.png">  
+<img src="/img/blog/latex-compare/share-5.png">    
 Seriously cool.  
 When you do this it automatically enables review mode. You can also do this at the top RHS:
 <img src="/img/blog/latex-compare/share-6.png">  
