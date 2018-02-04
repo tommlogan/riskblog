@@ -6,6 +6,7 @@ excerpt: How we organize our academic readings.
 date: 2017-09-17
 categories: research-practice
 comments: true
+toc: true
 ---
 
 [Click here to download our spreadsheet](/reading_list.xlsm)
