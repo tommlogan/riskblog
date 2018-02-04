@@ -150,7 +150,7 @@ h4 {
 	font-style: italic;
 }
 
-.post ul, ol {
+.post ul, .post ol {
   padding: 0 2em;
 }
 
@@ -192,7 +192,98 @@ h4 {
 	margin: 0;
 }
 
+#TOC {
+  /* margin-left: 1em; */
+	position: fixed;
+	top: 15em;
+	left: 2em;
+	font-size: 80%;
+	color: black;
+}
 
+.tocify a {
+	color: black;
+	border: 0;
+}
+.tocify a:hover {
+	color: #46bece;
+}
+
+.tocify ul, .tocify li{
+  line-height: 20px;
+	list-style: none;
+	list-style-type: none;
+	padding: 0.2em;
+	margin: 0;
+}
+
+.tocify li ul {
+	padding-left: 25px;
+	font-size: 90%;
+}
+
+.post h2::before {
+  display: block;
+  content: " ";
+  margin-top: -3.2em;
+  height: 3.2em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.post h1::before {
+  display: block;
+  content: " ";
+  margin-top: -3.2em;
+  height: 3.2em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+/* @media (max-width: 1800px) { */
+
+/* div.tocify { */
+  /* width: 15%; */
+  /* max-width: 20%;
+  max-height: 85%; */
+/* } */
+/* } */
+
+@media (min-width: 840px) and (max-width: 1800px) {
+	#TOC {
+		/* visibility: hidden; */
+	}
+
+  div.tocify {
+    width: 10%;
+  }
+}
+
+@media (max-width: 840px) {
+	#TOC {
+		visibility: hidden;
+	}
+}
+
+
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 
 /* Code

@@ -11,35 +11,19 @@ banner: false
 	<h0>{{ page.title }}</h0>
 </header>
 
-<header class="container post-meta">
-	<p><i class="fa fa-user"></i> {{ page.author }} <i class="fa fa-calendar"></i> {{ page.date | date: "%d %B %Y" }}</p>
-</header>
 
+<div id="TOC" class="tocify">
+	{% include toc.html html=content h_max=2 %}
+</div>
 <!-- One -->
 
 <section class="wrapper style1 container post">
-	{% if page.sidebar_toc %}
-		<div class="row 150%">
-			<!-- Sidebar -->
-			<div class="4u 12u(narrower)">
-					<div class="sidebar">
-							{% include toc.html html=content %}
-					</div>
-			</div>
-			<!-- Content -->
-			<div class="8u 12u(narrower) important(narrower)">
-				<div class="content">
-					<section>
+	<!-- <header class="container post-meta"> -->
+		<p class="post-meta"><i class="fa fa-user"></i> {{ page.author }} <i class="fa fa-calendar"></i> {{ page.date | date: "%d %B %Y" }}</p>
+	<!-- </header> -->
 
-						{{ content }}
-
-					</section>
-				</div>
-			</div>
-		</div>
-	{% else %}
 		{{ content }}
-	{% endif %}
+
 
 	{% include share_bar.html %}
 
