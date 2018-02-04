@@ -17,17 +17,19 @@ Well, I got a bit sick of that feeling and have learnt some techniques which my 
 Also, I believe that these skills are an essential thing to learn, whether we plan on becoming academics, valley entrepreneurs, or other consultants - the internet is not going anyway, we will be collaborating in teams on code, and preparing ourselves for this is only to our advantage.
 
 # Workshop and slides
-I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [here.](https://www.slideshare.net/TomLogan12/better-coding-practice)
-<iframe src="https://www.slideshare.net/TomLogan12/slideshelf" width="615px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [here.](https://drive.google.com/file/d/1sBwnpGkzFNRjlA0qCd_UQc5aFk37TSfG/view?usp=sharing)
+
+
 # GitHub
 Version control is essential. It is essential for research projects and any collaborative project.
 Version control time stamps every change you or someone else makes on a project.
-This means that you can return
+This means that you can return to every previous instance of your code, which is incredibly relieving if you make a mistake or the code stops working.
+It is also great to see how, when, and (providing the commit messages are decent) why different things were added or changed in the code.
 
 # Directory structure
     |- <your project name>/
     |- .git
-    |- \_scratch/
+    |- `_scratch`/
     |- data/
         |- raw/
         |- processed/
