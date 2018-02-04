@@ -6,7 +6,7 @@ excerpt: I've spent some time comparing Google Docs, Word, Sharelatex, and Overl
 date: 2017-03-10
 categories: research-practice
 comments: true
-sidebar_toc: false
+toc: true
 ---
 
 *Note: ShareLaTeX and Overleaf have announced a pending merger.*
