@@ -7,4 +7,4 @@ date:   2017-07-25
 categories: coding
 comments: true
 ---
-<iframe width="100%" height="4000" src="/img/blog/benchmark_parallel_bigdataframe.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="4000" src="/assets/blog/2017-07-25-R-parallel/benchmark_parallel_bigdataframe.html" frameborder="0" allowfullscreen></iframe>

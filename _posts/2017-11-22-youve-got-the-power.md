@@ -16,7 +16,7 @@ comments: true
 
 “What’s the problem?” asked a professor. “If you want to conduct interdisciplinary research with someone, just knock on their door.” But our experience as PhD candidates at the University of Michigan in Ann Arbor, where we study sustainability, suggests that bridging the ‘silos’ — doing research that crosses disciplines and engages people and organizations outside academia — is not that simple.
 
-<img align="right" src = "/img/blog/the_power.jpg" width = "40%" title = "Credit: Davor Pavelic/Getty">
+<img align="right" src = "/assets/blog/2017-11-22-youve-got-the-power/the_power.jpg" width = "40%" title = "Credit: Davor Pavelic/Getty">
 
 We wanted to strengthen the impact of our research by overcoming the inertia and lack of incentives for non-conventional collaborations. So we created MUSE, the [Michigan University-wide Sustainability and Environment](https://muse-initiative.umich.edu) network. Since it began in 2014, as an informal get-together for like-minded students, MUSE has snowballed to include a biweekly research workshop, an annual conference and a growing interdisciplinary network of PhD students and postdocs.
 

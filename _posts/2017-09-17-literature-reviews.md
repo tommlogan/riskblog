@@ -9,7 +9,7 @@ comments: true
 toc: true
 ---
 
-[Click here to download our spreadsheet](/reading_list.xlsm)
+[Click here to download our spreadsheet](/assets/blog/2017-09-17-literature-reviews/reading_list.xlsm)
 
 Reading is an integral part of being a PhD student, researcher, or academic.
 Without knowing the state of the literature, you cannot evaluate the merit of your work.
@@ -39,7 +39,7 @@ Paperpile is a web-based citation manager. It's great. The focus of this post is
 **1\.** If you install the Paperpile extension in Google Chrome (and it's only available in Chrome), whenever you search Google Scholar you'll see this:
 
 <p align="center">
-  <img src = '/img/blog/lit_review/scholar.png' width="70%">
+  <img src = '/assets/blog/2017-09-17-literature-reviews/scholar.png' width="70%">
 </p>
 
 To add a paper to your library, just click the Paperpile button.
@@ -49,13 +49,13 @@ The green tick on the first one means I've already got it in my library.
 Each paper can be in multiple folders.
 
 <p align="center">
-  <img src = '/img/blog/lit_review/paperpile.png' width="70%">
+  <img src = '/assets/blog/2017-09-17-literature-reviews/paperpile.png' width="70%">
 </p>
 
 **3\.** You can sync Paperpile with Google Drive. After you add a paper to your library it will automatically download to your computer (if you sync Google Drive with your computer, which I would also highly recommend). Papers are sorted by author's last name.
 
 <p align="center">
-  <img src = '/img/blog/lit_review/files.png' width="55%">
+  <img src = '/assets/blog/2017-09-17-literature-reviews/files.png' width="55%">
 </p>
 
 **4\.** You can have collaborative projects (i.e. shared Paperpile libraries).
@@ -82,7 +82,7 @@ When conducting a literature review it's useful to be able to:
 Our spreadsheet is a user-friendly and functional way to achieve #2 and #3.
 
 <p align="center">
-  <img src = '/img/blog/lit_review/excel.png' width="70%">
+  <img src = '/assets/blog/2017-09-17-literature-reviews/excel.png' width="70%">
 </p>
 
 ## Taking notes
@@ -98,7 +98,7 @@ This part of the spreadsheet is pretty standard.
 Here is where the magic comes in. We've built a few simple macros into the spreadsheet that allow you to filter your library of notes by various keywords. After trawling the internet for blogs and help forums that addressed this issue we found a lot of questions, but no satisfying answers. Here it is.
 
 <p align="center">
-  <img src = '/img/blog/lit_review/filter_bar.png' width="60%">
+  <img src = '/assets/blog/2017-09-17-literature-reviews/filter_bar.png' width="60%">
 </p>
 
 There are two ways to filter: the "OR" search allows you to input multiple keywords and return all papers that contain at least one of these search terms (e.g. all papers either written by "Logan" or containing the word "regression" in the notes columns); the "AND" filter returns results that match all criteria you specify (e.g. all papers written by "Logan" that contain the word "regression" in the notes columns).

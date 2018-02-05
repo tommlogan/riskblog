@@ -7,4 +7,4 @@ date:   2017-09-15
 categories: coding
 comments: true
 ---
-<iframe width="100%" height="2500" src="/img/blog/building_osrm.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="2500" src="/assets/blog/2017-09-15-OSRM-server/building_osrm.html" frameborder="0" allowfullscreen></iframe>

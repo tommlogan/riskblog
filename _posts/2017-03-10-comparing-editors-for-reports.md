@@ -63,16 +63,16 @@ In the following sections I’m going to outline and discuss the differences bet
 ### ShareLaTeX
 Once you register your (paid, $8/month or $80/year) account, go to account settings and integrate your github account. Note this is GitHub, not GitLab, so you’ll need a GitHub account. As a student you have unlimited private repos on GitHub. (Discussion about integrating GitLab and GitHub can occur another time - what I do is have many of my projects in GitHub and the ones that I want to share with the group or when I want to share specific code I put into GitLab. It is possible to have a sync).
 Back at the main page, click New Project -> Import from GitHub and select the repository from the menu.
-<img align="center" src="/img/blog/latex-compare/share-1.png">
+<img align="center" src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-1.png">
 So COOL!
 
 This pulls in the entire repository directory, and doesn’t care where the .tex (latex file) is located.
 
 Now, if you make any changes to the .tex file then you click Menu and under Sync choose GitHub.
-<img align="center" src="/img/blog/latex-compare/share-2.png">
+<img align="center" src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-2.png">
 
 This lets you push or pull changes to GitHub:
-<img align="center" src="/img/blog/latex-compare/share-3.png">
+<img align="center" src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-3.png">
 
 For example, if I want to add a figure into the document, I’ll drop it into my folder on my desktop, push the changes to github, then pull them into ShareLaTeX (the top option).
 Or if I’ve finished modifying, I’ll push my ShareLaTeX to github.
@@ -89,7 +89,7 @@ Some citation examples are [here](https://www.economics.utoronto.ca/osborne/late
 ### ShareLaTeX
 ShareLaTeX has a nice import and sync feature with Mendeley however it doesn’t support Mendeley groups which is devastating to collaboration. How is a collaborator of mine able to add a new reference and then inline citation if the whole project is linked to my .bib file. Argh.
 But there’s a work around, it’s just sad that they were so close. Basically, in Mendeley you have groups and these include your collaborators. Anyone can add references to these lists. To update the list, you could export the .bib file from the group
-<img align="center" src="/img/blog/latex-compare/mendley-1.png">
+<img align="center" src="/assets/blog/2017-03-10-comparing-editors-for-reports/mendley-1.png">
 
 Sync it to or copy it to the file with your .git and then push the changes. And pull the changes into ShareLaTeX.
 
@@ -99,35 +99,35 @@ Overleaf does groups great!
 
 Click on the drop down arrow by files, click Bibliography
 
-<img src="/img/blog/latex-compare/overleaf-1.png">
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/overleaf-1.png">
 
 Choose Mendeley
 If you have a group, choose it:
-<img src="/img/blog/latex-compare/overleaf-2.png">
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/overleaf-2.png">
 Tots amazeballs.
 
 ## Comments and Track Changes
 ### ShareLaTeX
 ShareLaTeX comments and track changes are hands down awesome.
 Select some writing and in the RHS you’ll see a little comment icon. Click it.  
-<img src="/img/blog/latex-compare/share-4.png">  
-<img src="/img/blog/latex-compare/share-5.png">    
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-4.png">  
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-5.png">    
 Seriously cool.  
 When you do this it automatically enables review mode. You can also do this at the top RHS:
-<img src="/img/blog/latex-compare/share-6.png">  
-For track changes, you need to set on <img src="/img/blog/latex-compare/share-7.png"> you need to pay for this (commenting is free)
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-6.png">  
+For track changes, you need to set on <img src="/assets/blog/2017-03-10-comparing-editors-for-reports/share-7.png"> you need to pay for this (commenting is free)
 Check out their [examples](https://www.sharelatex.com/track-changes-and-comments-in-latex).
 I’m very impressed.
 
 ### Overleaf
 Overleaf has two options for comments. One is a package called \todo ([example here](https://www.overleaf.com/8555149xcnnfbpmgchb)). Which is pretty neat.  
 
-The other is a rich text option so change your view to rich text: <img src="/img/blog/latex-compare/overleaf-3.png">  
-Then with your cursor in the document you want the comment you click the comment button <img src="/img/blog/latex-compare/overleaf-4.png"> and insert the comment
-<img src="/img/blog/latex-compare/overleaf-5.png">
+The other is a rich text option so change your view to rich text: <img src="/assets/blog/2017-03-10-comparing-editors-for-reports/overleaf-3.png">  
+Then with your cursor in the document you want the comment you click the comment button <img src="/assets/blog/2017-03-10-comparing-editors-for-reports/overleaf-4.png"> and insert the comment
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/overleaf-5.png">
 
 Track changes is a little different. It requires you to save a version and then compare versions.
-<img src="/img/blog/latex-compare/overleaf-6.png">
+<img src="/assets/blog/2017-03-10-comparing-editors-for-reports/overleaf-6.png">
 I think ShareLaTeX is better. But Overleaf isn’t bad.
 
 # Final Thoughts
