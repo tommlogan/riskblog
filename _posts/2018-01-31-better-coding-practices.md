@@ -17,8 +17,9 @@ Well, I got a bit sick of that feeling and have learnt some techniques which my 
 Also, I believe that these skills are an essential thing to learn, whether we plan on becoming academics, valley entrepreneurs, or other consultants - the internet is not going anyway, we will be collaborating in teams on code, and preparing ourselves for this is only to our advantage.
 
 # Workshop and slides
-I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [here.](https://drive.google.com/file/d/1sBwnpGkzFNRjlA0qCd_UQc5aFk37TSfG/view?usp=sharing)
+I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](https://drive.google.com/file/d/1sBwnpGkzFNRjlA0qCd_UQc5aFk37TSfG/view?usp=sharing)
 
+The below blog is really a compliment to the slides, rather than stand alone, so check them out!
 
 # GitHub
 Version control is essential. It is essential for research projects and any collaborative project.
@@ -52,7 +53,7 @@ It is also great to see how, when, and (providing the commit messages are decent
 
 
 # Rstudio
-
+The slides show how Rstudio can be used to regularly make git commits and write and preview markdown.
 
 # ShareLaTeX
 I refer you to my earlier blog on this, [here.](http://reckoningrisk.com/research-practice/2017/comparing-editors-for-reports/)
