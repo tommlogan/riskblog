@@ -12,7 +12,7 @@ Is it one where you, your children, and your grandparents have access to the thi
 {% include urban-access-map.html %}
 
 ## Why accessibility?
-<img align="right" class ="image" src="/img/access/elderly.jpeg" width = "40%">
+<img align="right" class ="image" src="/assets/blog/2017-09-19-urban-access/elderly.jpeg" width = "40%">
 
 Things like green spaces, supermarkets, health care, and schools are super important for a city’s residents.
 Good access to these services promotes (among other things): active and sustainable forms of transportation; community interaction; good nutrition; and health and well-being.
@@ -46,7 +46,7 @@ The results generated in our analysis can be used to plot empirical cumulative d
 
 ### ECDFs
 
-<img align="left" class ="image" src="/img/access/supermarket_bal_det.jpg" width = "60%">
+<img align="left" class ="image" src="/assets/blog/2017-09-19-urban-access/supermarket_bal_det.jpg" width = "60%">
 
 ECDFs show us the entire distribution of proximity throughout a city or multiple cities.
 They remove the need for an arbitrary threshold that reduces accessibility into a "access-or-not" metric.
@@ -57,7 +57,7 @@ By very definition, imposing a threshold ignores the proximity of all residents 
 ### Spatial maps
 
 Spatial maps of accessibility show which areas of a city need attention.
-Analysis that calculate accessibility at aggregated units (e.g. census tracts or neigbourhoods) are subject to the modifiable areal unit problem (MAUP), from imposing arbitary boundaries.
+Analysis that calculate accessibility at aggregated units (e.g. census tracts or neighborhoods) are subject to the modifiable areal unit problem (MAUP), from imposing arbitrary boundaries.
 We calculate accessibility at the building-level, so our results are independent of these boundaries.
 Additionally, analysis using large spatial areas assume that the access from the center of each area is representative of the entire population within it.
 This is rarely the case.
@@ -67,4 +67,4 @@ To read our [paper click here.](http://journals.sagepub.com/doi/10.1177/23998083
 
 Instructions on setting up OSRM, the network distance calculator we used in our model, can be found [here]('http://tomlogan.co.nz/blogs/querying_OSRM.html').
 
-<img class ="image" src="/img/access/crowd_walk.jpeg" width = "100%">
+<img class ="image" src="/assets/blog/2017-09-19-urban-access/crowd_walk.jpeg" width = "100%">

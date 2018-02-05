@@ -17,7 +17,7 @@ Well, I got a bit sick of that feeling and have learnt some techniques which my 
 Also, I believe that these skills are an essential thing to learn, whether we plan on becoming academics, valley entrepreneurs, or other consultants - the internet is not going anyway, we will be collaborating in teams on code, and preparing ourselves for this is only to our advantage.
 
 # Workshop and slides
-I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](https://drive.google.com/file/d/1sBwnpGkzFNRjlA0qCd_UQc5aFk37TSfG/view?usp=sharing)
+I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.pptx)
 
 The below blog is really a compliment to the slides, rather than stand alone, so check them out!
 
@@ -61,7 +61,7 @@ I refer you to my earlier blog on this, [here.](http://reckoningrisk.com/researc
 # Logging
 Logging your code is an alternative to lots of print statements and it's more robust if you run your code on a server or other system that doesn't have a terminal.
 It also timestamps statements so you know when and where the code broke.
-[Here is my logging function](/post_assets/logger_config.py) which you can use in python.
+[Here is my logging function](/assets/blog/2018-01-31-better-coding-practices/logger_config.py) which you can use in python.
 If you add this file into your `code` directory and then in each of your .py scripts add the following code block where you import your libraries:
 {% highlight python %}
 # init logging
