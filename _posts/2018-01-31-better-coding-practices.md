@@ -46,13 +46,23 @@ It is also great to see how, when, and (providing the commit messages are decent
         |- logger_config.py (for example)
 
 # Atom
-
-
+Atom is currently my favourite code editor when I'm writing in python or css/html etc.
+I'm also a fan of sublime, although I haven't got it to integrate with git like Atom does.
+By clicking ctrl+shift+9 in Atom you toggle the git tab and can then stage, commit, push, and pull from the GitHub repo.
+I find that this significantly lowers the barrier to making regular and contained commits, which makes the repo cleaner and easier to interpret.
 
 # Markdown and READMEs
-
+Another thing that I love about Atom is how it renders a preview of Markdown (.md) documents.
+Markdown is a plain text language, with very easy inclusion of code and math.
+It renders on the README of GitHub repositories and READMEs are crucial for understandable repos.
+When you're reading or editing a .md document in Atom, clicking ctrl+shift+m opens the preview pane.
+A decent readme on a project's repo outlines the steps and assumptions taken.
+It makes the whole project much more accessible to future collaborators and yourself when you return to the project.
+It also looks more professional when potential collaborators or employers are looking at your GitHub repos.
+The README.md file could also include variable names and descriptions if your project includes a statistical analysis.
 
 # Rstudio
+Rstudio can do many of the things Atom can, and is the go-to option if you're coding in R. (Although I still prefer to write my README.md in Atom, even when coding in R).
 The slides show how Rstudio can be used to regularly make git commits and write and preview markdown.
 
 # ShareLaTeX
