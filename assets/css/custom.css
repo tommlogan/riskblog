@@ -67,6 +67,26 @@ h4 {
 		color: #fff;
 	}
 
+	#logo-small h2 {
+		color: #fff;
+	}
+
+
+	@media (min-width: 840px) {
+		#logo-small {
+			visibility: hidden;
+			display: none;
+		}
+	}
+
+	@media (max-width: 840px) {
+		#logo-main {
+			visibility: hidden;
+			display: none;
+		}
+	}
+
+
 
 /* Content */
 
@@ -241,20 +261,7 @@ h4 {
 }
 
 
-/* @media (max-width: 1800px) { */
-
-/* div.tocify { */
-  /* width: 15%; */
-  /* max-width: 20%;
-  max-height: 85%; */
-/* } */
-/* } */
-
 @media (min-width: 840px) and (max-width: 1800px) {
-	#TOC {
-		/* visibility: hidden; */
-	}
-
   div.tocify {
     width: 10%;
   }
