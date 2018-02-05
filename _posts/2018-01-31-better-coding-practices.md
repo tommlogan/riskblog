@@ -12,14 +12,14 @@ toc: true
 Have you ever had to revisit a coding project? If you're like me, there's a sense of trepidation. Will I remember what I was doing? Will it still work?  
 They say that your closest collaborator is your past self, except she/he doesn't respond to emails...
 
-Well, I got a bit sick of that feeling and have learnt some techniques which my future self will be thankful for. And that's what I want to share with you. Note that many of these are adapted from [Jeff Leek's book, *How to be a Modern Scientist*](http://jtleek.com/book/).  
+Well, I got a bit sick of that feeling and have learnt some techniques which my future self will be thankful for (or darn well better be). And that's what I want to share with you. Note that many of these are adapted from [Jeff Leek's book, *How to be a Modern Scientist*](http://jtleek.com/book/).  
 
 Also, I believe that these skills are an essential thing to learn, whether we plan on becoming academics, valley entrepreneurs, or other consultants - the internet is not going anyway, we will be collaborating in teams on code, and preparing ourselves for this is only to our advantage.
 
 # Workshop and slides
 I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.pptx)
 
-The below blog is really a complements to the slides, rather than stand alone, so check them out!
+The blog below is really a complement to the slides, rather than stand alone, so check them out!
 
 # GitHub
 Version control is essential. It is essential for research projects and any collaborative project.
