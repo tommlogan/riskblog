@@ -26,6 +26,9 @@ linkedin_username: tom-logan-4b262a5b/
 scholar_username: NqnK14EAAAAJ
 
 # Build settings
+theme: minima
+plugins:
+  - jekyll-feed
 # source: /_jekyll
 # destination: /blogs
 permalink: /:categories/:year/:title/

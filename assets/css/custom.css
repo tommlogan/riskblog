@@ -17,6 +17,10 @@ p {
 	color: #000;
 }
 
+p.center {
+	text-align: center;
+}
+
 a {
 	color: rgb(81, 152, 57)
 }
