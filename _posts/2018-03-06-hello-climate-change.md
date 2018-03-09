@@ -3,7 +3,7 @@ layout: post
 title:  Hello Climate Change
 author: Tom Logan
 excerpt: I've just finished participating in the Intergovernmental Panel on Climate Change's (IPCC) Cities conference. The climate forecasts in the forthcoming assessment report on the state of the climate are worse. Everything has gotten worse. Let's pull out the stops and act.
-date:   2018-03-06
+date:   2018-03-08
 categories: comment
 comments: true
 toc: false
@@ -17,9 +17,7 @@ I remember how we would speculate what it would be like watching the news and he
 
 Now it's here.
 
-<p class="center">
 {% include slider.html selector="slider2" %}
-</p>
 
 Not just the grandchildren. Not just the children. Climate change is going to effect us *all*. Starting now.
 
@@ -47,7 +45,7 @@ Whatever it is, we all must act to prepare for the inevitable impacts of climate
 # sources
 * Wildfires: Wildfires world-wide, such as this one in Los Angeles, were described as "unusual and possibly unprecedented." [info](https://en.wikipedia.org/wiki/2017_wildfire_season), [image](https://commons.wikimedia.org/w/index.php?curid=62670212)  
 Already communities in Samoa and New Zealand are at risk of being abandoned.
-* Cyclone: [image](https://www.wunderground.com/hurricane/south-pacific/2018/tropical-cyclone-hola?map=5day)
+* Cyclone: [image](http://www.radionz.co.nz/news/national/352209/hola-likely-to-reach-nz-another-storm-possible-after-niwa)
 * Granity: [info](https://www.radionz.co.nz/national/programmes/checkpoint/20180220), [image](https://www.radionz.co.nz/news/national/350844/in-photos-cyclone-gita)
 * Samoa: [info](http://www.radionz.co.nz/news/political/351864/samoan-village-may-become-uninhabitable-it-s-heartbreaking)
 * Harvey: Hurricane Harvey was one of [many horrific hurricanes](https://weather.com/storms/hurricane/news/2017-11-11-moments-hurricane-season-atlantic-irma-maria-harvey) in 2017. [info](https://news.nationalgeographic.com/2017/12/climate-change-study-hurricane-harvey-flood/)
