@@ -2,3 +2,6 @@ extra/
 _site
 *.ini
 _draft/
+_site
+.sass-cache
+.jekyll-metadata
