@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  Hello Climate Change
-author: Tom Logan
-excerpt: I've just finished participating in the Intergovernmental Panel on Climate Change's (IPCC) Cities conference. The climate forecasts in the forthcoming assessment report on the state of the climate are worse. Everything has gotten worse. Let's pull out the stops and act.
 date:   2018-03-08
 categories: comment
+image: http://reckoningrisk.com/assets/blog/2018-03-08-hello-climate-change/la-fire.jpg
+excerpt: "I've just finished participating in the Intergovernmental Panel on Climate Change's (IPCC) Cities conference. The climate forecasts in the forthcoming assessment report on the state of the climate are worse. Everything has gotten worse. Let's pull out the stops and act."
+author: Tom Logan
 comments: true
 toc: false
+
 image_sliders:
   - slider2
 ---
