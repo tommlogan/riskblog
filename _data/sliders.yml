@@ -2,15 +2,15 @@
   bullets: true
   captions: true
   images:
-    - src: assets/blog/2018-03-08-hello-climate-change/640px-La_Tuna_fire_and_cityscape_1.jpg
+    - src: assets/blog/2018-03-08-hello-climate-change/la-fire.jpg
       alt: Wildfires worldwide, such as this one in LA, were described as unprecedented
-    - data-src: /assets/blog/2018-03-08-hello-climate-change/cyclone-hola.bmp
-      alt: New Zealand is being threatened by a third cyclone within five weeks
+    - data-src: /assets/blog/2018-03-08-hello-climate-change/cyclone-hola.jpg
+      alt: New Zealand is being threatened by a third cyclone within six weeks
     - data-src: /assets/blog/2018-03-08-hello-climate-change/granity.jpg
       alt: Communities such as Granity, NZ, are imperiled by the sea
     - src: /assets/blog/2018-03-08-hello-climate-change/harvey.jpg
       alt: Hurricane Harvey was one of myriad of record breaking hurricanes in 2017
-    - src: /assets/blog/2018-03-08-hello-climate-change/cape-town.webp
+    - src: /assets/blog/2018-03-08-hello-climate-change/CapeTown.jpg
       alt: Cape Town may only narrowly avoid running out of water
     - src: /assets/blog/2018-03-08-hello-climate-change/warm.jpg
       alt: 2017 is the warmest non El Nino year on record
@@ -21,7 +21,7 @@
     - src: /assets/blog/2018-03-08-hello-climate-change/african-drought.png
       alt: Two consecutive years of drought in these 17 countries has left more than 38mil people at risk
   settings:
-    height: 500
+    height:
     effect: "'fade'"
 
 - selector: slider1
