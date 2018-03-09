@@ -23,7 +23,7 @@ Now it's here.
 
 Not just the grandchildren. Not just the children. Climate change is going to effect us *all*. Starting now.
 
-I've just finished participating in the Intergovernmental Panel on Climate Change's (IPCC) Cities conference. The forecasts in the forthcoming assessment report on the state of the climate are worse. Everything has gotten worse. Most of the projections are trending nearer the "extreme case" of earlier reports.
+I've just finished participating in the [Intergovernmental Panel on Climate Change's (IPCC) Cities conference](https://citiesipcc.org/). The forecasts in the forthcoming assessment report on the state of the climate are worse. Everything has gotten worse. Most of the projections are trending nearer the "extreme case" of earlier reports.
 
 <img class ="image" src="/assets/blog/2018-03-08-hello-climate-change/SPM.07_rev1-01.png"  width = "60%">
 This figure, [published in 2014](https://www.ipcc.ch/pdf/assessment-report/ar5/syr/AR5_SYR_FINAL_SPM.pdf) shows a conservative vs dire emission scenario and the effect on warming. This was four years ago. In addition, other climate impacts are being updated, such as the devastating effect on the [world's species](https://www.nature.com/articles/nclimate3223).
