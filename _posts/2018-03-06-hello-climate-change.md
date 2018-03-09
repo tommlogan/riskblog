@@ -8,7 +8,6 @@ excerpt: "I've just finished participating in the Intergovernmental Panel on Cli
 author: Tom Logan
 comments: true
 toc: false
-
 image_sliders:
   - slider2
 ---
