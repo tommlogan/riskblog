@@ -49,17 +49,17 @@
      <meta property="og:image" content="{{page.image}}" />
      <meta name="twitter:image" content="{{page.image}}" />
    {% else %}
-     <meta property="og:image" content="http://reckoningrisk.com/assets/img/logo_black.png" />
-     <meta name="twitter:image" content="http://reckoningrisk.com/assets/img/logo_black.png" />
+     <meta property="og:image" content="{{ site.image }}" />
+     <meta name="twitter:image" content="{{ site.image }}" />
    {% endif %}
 
   {% else %}
    <!-- OG data for homepage -->
-   <meta property="og:image" content="http://reckoningrisk.com/assets/img/logo_black.png" />
+   <meta property="og:image" content="{{ site.image }}" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
    <meta name="twitter:title" content="{{site.title}}" />
-   <meta name="twitter:image" content="http://reckoningrisk.com/assets/img/logo_black.png" />
+   <meta name="twitter:image" content="{{ site.image }}" />
 
   {% endif %}
 
