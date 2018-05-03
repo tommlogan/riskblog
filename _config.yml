@@ -16,10 +16,9 @@
 
 title: Reckoning Risk
 email: tomlogan@umich.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  A risk and science blog by Tom Logan and Tim Williams
+description: A risk and science blog by Tom Logan and Tim Williams
 baseurl: "" # the subpath of your site, e.g. /blog
-url:  # the base hostname & protocol for your site, e.g. http://example.com
+url:  http://reckoningrisk.com# the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TomMLogan
 github_username:  tommlogan
 linkedin_username: tom-logan-4b262a5b/
