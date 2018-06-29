@@ -69,8 +69,7 @@ The following figure shows the predicted vs. actual values using this linear mod
 This is surprisingly good!
 I'm not able to capture the extreme values, but the model does a reasonable job of explaining the variance in the prices and capturing the peaks and troughs of the time series.
 
-But am I overestimating my predictive accuracy by using the entire dataset?
-Perhaps.
+But am I considerably overestimating my predictive accuracy by using the entire dataset?
 
 To get around this, I created a "rolling model", in which I predicted each month's price using only the data that had previously been observed.
 For example, to predict the dataset's second month's price I trained a model only on the information from the first month.
@@ -82,9 +81,9 @@ How do we do?
 
 <img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/wheat_rolling_predictions.png"  width = "80%">
 
-Still very well (apart from a spurious month).
+Still very well (apart from a spurious month in 2011).
 Again, we're able to capture the general trends in the data.
-The model does pretty badly at predicting Wheat prices in 2013, and again the extreme values are not always predicted, but I'm still pretty impressed.
+The model does pretty badly at predicting Wheat prices in 2013 (i.e. it predicts a price increase, rather than a price decrease), and again the extreme values are not always predicted, but I'm still pretty impressed.
 
 
 ## Adding a lag term
