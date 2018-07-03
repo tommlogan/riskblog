@@ -12,6 +12,14 @@ toc: true
 My objective here was to see how well I could predict historical crop prices in Ethiopia using solely weather and climate information.
 I chose to focus my analysis in Amhara, located in the Ethiopian highlands.
 
+The main questions I was trying to answer here were:
+
+1. **How well can prices be predicted using _solely_ climate and weather data?**
+
+2. **How does this compare to models that include a _lag_ term (i.e. information about previous prices)?**
+
+If models using solely weather and climate are on par with those using a lag term, this gives evidence that there is a relationship between climate and prices that is independent of previous price conditions.
+
 # Data
 ## Crop prices
 I sourced monthly crop prices for Maize and Wheat from the [World Food Program's online crop prices database](http://foodprices.vam.wfp.org/Analysis-Monthly-Price-DataADV.aspx).
@@ -58,13 +66,6 @@ The following figure shows these covariates over time for the two crops.
 
 
 # Modeling
-The main questions I was trying to answer here were:
-
-1. **How well can prices be predicted using _solely_ climate and weather data?**
-
-2. **How does this compare to models that include a _lag_ term (i.e. information about previous prices)?**
-
-If models using solely weather and climate are on par with those using a lag term, this gives evidence that there is a relationship between climate and prices that is independent of previous price conditions.
 
 ## Simple linear models
 The first model I fit was a simple linear regression using all covariates.
@@ -147,8 +148,8 @@ Some observations:
 Based on this final point, I can conclude that I may have some pretty graphs so far, but the models are pretty useless at predicting month-ahead crop yields.
 
 Based on this, I conclude that:
-1. Yes, crop prices can be predicted using solely climate and weather data. However, these models struggle at predicting extreme values.
-2. Including a lag term (or running a simple persistence model) gives predictions that are twice as accurate.
+1. **Yes, crop prices can be predicted using solely climate and weather data. However, these models struggle at predicting extreme values.**
+2. **Including a lag term (or running a simple persistence model) gives predictions that are twice as accurate.**
 
 ## Variable importance
 Which variables are the most useful for predicting prices?
