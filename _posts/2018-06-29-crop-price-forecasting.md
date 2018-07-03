@@ -51,6 +51,11 @@ rain_YTD | Total year-to-date sum of rainfall
 EDD_YTD | Total year-to-date sum of EDDs
 GDD_YTD |  Total year-to-date sum of GDDs
 
+The following figure shows these covariates over time for the two crops.
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/all_covariates_timeseries.png"  width = "80%">
+
+
 
 # Modeling
 How well can I predict crop prices, given these covariates?
@@ -81,7 +86,7 @@ How do we do?
 
 <img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/wheat_rolling_predictions.png"  width = "80%">
 
-Still very well (apart from a spurious month in 2011).
+Still very well (apart from a spurious month in 2011, which I believe is a sign of the model's sensitivity to the abnormally low rainfall and high temperatures in the previous year (refer to the figure showing the temporal evolution of the covariates) -- but this is not entirely clear).
 Again, we're able to capture the general trends in the data.
 The model does pretty badly at predicting Wheat prices in 2013 (i.e. it predicts a price increase, rather than a price decrease), and again the extreme values are not always predicted, but I'm still pretty impressed.
 
@@ -98,6 +103,62 @@ The following figures show the predictions for Maize and Wheat using a "rolling"
 
 This has improved the model fit considerably!
 Given we know the previous price, we're now able to capture the pits and peaks in the dataset with a high amount of accuracy.
+
+## Testing out-of-sample accuracy (and variable selection)
+An alternative way of evaluating model performance is to conduct a holdout analysis.
+Here, I trained a linear model on a random 80% of the data, and then tested it on the remaining 20%.
+I repeated this 50 times, giving a distribution of predictive accuracy.
+
+I also added a backwards stepwise variable selection (using `sklearn.feature_selection.RFE`) to see how the predictive accuracy depends on the number of covariates that are included.
+
+The following figures show: (1) predicted vs actual values (for all 50 holdouts);
+(2) boxplots of the mean absolute prediction error (MAE) as a function of the number of covariates included; and
+(3) a boxplot of the MAE of the persistence model (i.e. if the prediction is set equal to last month's value).
+
+Results are shown for models with and without a lag term (only the results for Maize are shown for brevity, but the results for Wheat are similar).
+
+Some observations:
+- Inclusion of the lag term significantly improves the predictive accuracy
+- The lag term, when included, is (likely) by far the most important predictor of prices, as adding additional covariates does not noticeably improve the MAE.
+- When no lag term is included, more covariates generally leads to better predictions.
+- **BUT**, and **this is a big but**, without a lag term, none of the models ever do as well as the persistence model.
+
+Based on this final point, I can conclude that I may have some pretty graphs so far, but the models are pretty useless at predicting month-ahead crop yields.
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/holdout_predictive_accuracy_Maize_Amhara_lag.png"  width = "100%">
+
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/holdout_predictive_accuracy_Maize_Amhara_no_lag.png"  width = "100%">
+
+## Variable importance
+
+** NOTE ** : When reading this section, keep in mind that the persistence model is no less accurate than any models with more covariates. Hence, the signs of coefficients and "importance" should be assessed with this in mind.
+
+Which variables are the most useful for predicting prices?
+The following two figures show (for Maize), for each number of covariates in the stepwise selection algorithm, the frequency with which each covariate was selected.
+
+With a lag term (`prev_price`):
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/variable_importance_Maize_Amhara_lag.png"  width = "80%">
+
+Without a lag term:
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/variable_importance_Maize_Amhara_no_lag.png"  width = "80%">
+
+We see that, as expected, when the lag term is included, it is almost always retained as a variable.
+Following this, it generally seems that the temperature (EDD and GDD) variables are selected more often than the rainfall variables, suggesting that prices might be more closely related to temperature than rainfall.
+
+We can also look at the value of the regression parameters to see the direction with which each coefficient influences prices.
+For this, all data was normalized (using `sklearn.preprocessing.MinMaxScaler`).
+
+Some observations:
+- EDDs (and lagged EDDs) has a positive coefficient, so more EDDs is associated with higher crop prices. This is intuitive, as EDDs can have detrimental effects on crop yields.
+- The effect of both GDDs and EDDs in the previous year is more significant than both the current month's value and the year-to-date sum. This is interesting, and offers hope that longer-range forecasts will be possible.
+- More rain seems to lead to higher prices.
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/regression_coefs_Maize_Amhara_lag.png"  width = "80%">
+
+
 
 ## Autoregressive models
 Adding a lag term is slightly in the spirit of an autoregressive (AR) model, which are specifically intended for time series analysis.
