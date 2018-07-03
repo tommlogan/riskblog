@@ -58,8 +58,13 @@ The following figure shows these covariates over time for the two crops.
 
 
 # Modeling
-How well can I predict crop prices, given these covariates?
-As it turns out - surprisingly well.
+The main questions I was trying to answer here were:
+
+1. **How well can prices be predicted using _solely_ climate and weather data?**
+
+2. **How does this compare to models that include a _lag_ term (i.e. information about previous prices)?**
+
+If models using solely weather and climate are on par with those using a lag term, this gives evidence that there is a relationship between climate and prices that is independent of previous price conditions.
 
 ## Simple linear models
 The first model I fit was a simple linear regression using all covariates.
@@ -90,6 +95,7 @@ Still very well (apart from a spurious month in 2011, which I believe is a sign 
 Again, we're able to capture the general trends in the data.
 The model does pretty badly at predicting Wheat prices in 2013 (i.e. it predicts a price increase, rather than a price decrease), and again the extreme values are not always predicted, but I'm still pretty impressed.
 
+So, to give a preliminary answer to question #1 above, prices _can_ be predicted reasonably accurately using solely climate information.
 
 ## Adding a lag term
 Say we're trying to predict what the price will be next month (in July).
@@ -104,6 +110,12 @@ The following figures show the predictions for Maize and Wheat using a "rolling"
 This has improved the model fit considerably!
 Given we know the previous price, we're now able to capture the pits and peaks in the dataset with a high amount of accuracy.
 
+This is not unexpected, and gives us a preliminary answer to question #2 above.
+It seems that the inclusion of the lag term does help improve the predictions considerably.
+But now let's assess this quantitatively...
+
+
+
 ## Testing out-of-sample accuracy (and variable selection)
 An alternative way of evaluating model performance is to conduct a holdout analysis.
 Here, I trained a linear model on a random 80% of the data, and then tested it on the remaining 20%.
@@ -115,25 +127,30 @@ The following figures show: (1) predicted vs actual values (for all 50 holdouts)
 (2) boxplots of the mean absolute prediction error (MAE) as a function of the number of covariates included; and
 (3) a boxplot of the MAE of the persistence model (i.e. if the prediction is set equal to last month's value).
 
-Results are shown for models with and without a lag term (only the results for Maize are shown for brevity, but the results for Wheat are similar).
+Results are shown for models without and with a lag term (only the results for Maize are shown for brevity, but the results for Wheat are similar).
 
-Some observations:
-- Inclusion of the lag term significantly improves the predictive accuracy
-- The lag term, when included, is (likely) by far the most important predictor of prices, as adding additional covariates does not noticeably improve the MAE.
-- When no lag term is included, more covariates generally leads to better predictions.
-- **BUT**, and **this is a big but**, without a lag term, none of the models ever do as well as the persistence model.
-
-Based on this final point, I can conclude that I may have some pretty graphs so far, but the models are pretty useless at predicting month-ahead crop yields.
-
-<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/holdout_predictive_accuracy_Maize_Amhara_lag.png"  width = "100%">
-
+No lag term:
 
 <img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/holdout_predictive_accuracy_Maize_Amhara_no_lag.png"  width = "100%">
 
+With lag term:
+
+<img class ="image" src="/assets/blog/2018-06-29-crop-price-forecasting/holdout_predictive_accuracy_Maize_Amhara_lag.png"  width = "100%">
+
+Some observations:
+- The model with no lag term fails to predict the extreme values.
+- Inclusion of the lag term significantly improves the predictive accuracy, and gives better predictions of extreme values.
+- The lag term, when included, is (likely) by far the most important predictor of prices, as adding additional covariates does not noticeably improve the MAE.
+- When no lag term is included, more covariates generally leads to better predictions.
+- Without a lag term, none of the models ever do as well as the persistence model, and achieve MAEs that are approximately twice as high as the persistence model.
+
+Based on this final point, I can conclude that I may have some pretty graphs so far, but the models are pretty useless at predicting month-ahead crop yields.
+
+Based on this, I conclude that:
+1. Yes, crop prices can be predicted using solely climate and weather data. However, these models struggle at predicting extreme values.
+2. Including a lag term (or running a simple persistence model) gives predictions that are twice as accurate.
+
 ## Variable importance
-
-** NOTE ** : When reading this section, keep in mind that the persistence model is no less accurate than any models with more covariates. Hence, the signs of coefficients and "importance" should be assessed with this in mind.
-
 Which variables are the most useful for predicting prices?
 The following two figures show (for Maize), for each number of covariates in the stepwise selection algorithm, the frequency with which each covariate was selected.
 
@@ -186,5 +203,7 @@ Since I was able to get good predictions using the regular linear models I'm goi
 # Conclusions
 While a very simple and rough analysis, I think that this shows potential.
 Since market prices can directly influence the food security and livelihoods of smallholders, being able to predict these prices ahead of time could be of great use.
-A next step would be to run the same models using _climate forecasts_ (rather than historical climate data) to assess whether prices can be predicted as accurately ahead of time.
-Additionally, the analysis could be extended to other regions of Ethiopia, sub-Saharan Africa, or the world.
+Some next steps could be:
+- To give predictions for several months in advance. This would be more practically useful for informing planting decisions, for example.
+- To run the same models using _climate forecasts_ (rather than historical climate data) to assess whether prices can be predicted as accurately ahead of time.
+- Extend the analysis to other regions of Ethiopia, sub-Saharan Africa, or the world.
