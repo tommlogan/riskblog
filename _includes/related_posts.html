@@ -15,16 +15,19 @@
       {% if post.url != page.url %}
         {% if page.categories contains category %}
           {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="fa fa-tags">{{ category }}</span> {% endcapture %}
+          {% capture tagmarkup %} <span class="fa fa-tags post-meta">{{ category }}</span> {% endcapture %}
           {% assign commonTags = commonTags | append: tagmarkup %}
         {% endif %}
       {% endif %}
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-      <div>
-      <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></p>
-      </div>
+    <article class="6u 12u(narrower)">
+        {% unless post.tags contains 'draft' %}
+        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></p>
+        <p>{{post.excerpt}}</p>
+        {% endunless %}
+    </article>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}
