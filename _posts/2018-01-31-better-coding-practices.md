@@ -4,7 +4,7 @@ title:  Better Coding Practice
 author: Tom Logan
 excerpt: Have you ever had to revisit a coding project? If you're like me, there's a sense of trepidation. Will I remember what I was doing? Will it still work?  Here are some techniques that may make you a happier and more efficient researcher.
 date:   2018-01-31
-categories: research-practice
+categories: research-practice coding
 comments: true
 toc: true
 ---
