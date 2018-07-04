@@ -30,31 +30,28 @@ banner: false
 
 	{% include disqus.html %}
 
+	<p class="no_space">{{page.previous.tags}}</p>
+
+
+
 		{% if page.previous.url or page.next.url %}
 		<hr />
 		<div class="row">
 			<article class="6u 12u(narrower)">
 				{% if page.previous.url %}
-					{% if page.previous.tags contain 'draft' %}
-						{% unless page.previous.previous.tags contain 'draft' %}
-							<h4>Previous</h4>
-							<p class="no_space"><a href="{{ page.previous.previous.url }}">{{page.previous.previous.title}}</a></p>
-							<p>{{page.previous.previous.excerpt}}</p>
-						{% endunless %}
-						{% else %}
-						<h4>Previous</h4>
-						<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
-						<p>{{page.previous.excerpt}}</p>
+					<h4>Previous</h4>
+					<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
+					<p>{{page.previous.excerpt}}</p>
 				{% endif %}
 			</article>
 			<article class="6u 12u(narrower)">
-				<!-- {% if page.next.url %} -->
+				{% if page.next.url %}
 				{% unless page.next.tags contain 'draft' %}
 					<h4>Next</h4>
 					<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
 					<p>{{page.next.excerpt}}</p>
 				{% endunless %}
-				<!-- {% endif %} -->
+				{% endif %}
 			</article>
 		</div>
 		{% endif %}
