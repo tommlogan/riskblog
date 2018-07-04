@@ -21,6 +21,13 @@ banner: false
 <section class="wrapper style1 container post">
 	<!-- <header class="container post-meta"> -->
 		<p class="post-meta"><i class="fa fa-user"></i> {{ page.author }} <i class="fa fa-calendar"></i> {{ page.date | date: "%d %B %Y" }}</p>
+		<p> why is nothing showing up on the page? </p>
+		<p class="post-meta">{{page.tags}}</p>
+
+		<p class="post-meta">{{page.previous.tags}}</p>
+
+		<p class="post-meta">post {{post.tags}}</p>
+
 	<!-- </header> -->
 
 		{{ content }}
@@ -33,14 +40,7 @@ banner: false
 
 		{% if page.previous.url or page.next.url %}
 		<hr />
-		<div class="row">
-			<p class="no_space">{{page.tags}}</p>
 
-			<p class="no_space">{{page.previous.tags}}</p>
-
-			<p class="no_space">post {{post.tags}}</p>
-			<p> why is nothing showing up on the page? </p>
-		</div>
 		<div class="row">
 			<article class="6u 12u(narrower)">
 				{% if page.previous.url %}
