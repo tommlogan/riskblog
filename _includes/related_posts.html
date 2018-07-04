@@ -24,8 +24,8 @@
     {% if sameTagCount >= minCommonTags %}
 
         {% unless post.tags contains 'draft' %}
-        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
-        <p>{{post.excerpt}}</p>
+        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><<span class="fa fa-tags post-meta">{{ post.categories }}</span>/p>
+        <p class="no_space">{{post.excerpt}}</p>
         {% endunless %}
 
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
