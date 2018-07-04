@@ -21,12 +21,6 @@ banner: false
 <section class="wrapper style1 container post">
 	<!-- <header class="container post-meta"> -->
 		<p class="post-meta"><i class="fa fa-user"></i> {{ page.author }} <i class="fa fa-calendar"></i> {{ page.date | date: "%d %B %Y" }}</p>
-		<p class="post-meta">page{{page.tags}}</p>
-
-		<p class="post-meta">previous page {{page.previous.tags}}</p>
-		<p class="post-meta">previous x2 page {{page.previous.previous.tags}}</p>
-
-		<p class="post-meta">post {{post.tags}}</p>
 
 	<!-- </header> -->
 
@@ -43,16 +37,20 @@ banner: false
 		<div class="row">
 			<article class="6u 12u(narrower)">
 				{% if page.previous.url %}
+					{% unless page.previous.tag contains 'draft' %}
 					<h4>Previous</h4>
 					<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
 					<p>{{page.previous.excerpt}}</p>
+					{% endunless %}
 				{% endif %}
 			</article>
 			<article class="6u 12u(narrower)">
 				{% if page.next.url %}
+					{% unless page.next.tag contains 'draft' %}
 					<h4>Next</h4>
 					<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
 					<p>{{page.next.excerpt}}</p>
+					{% endunless %}
 				{% endif %}
 			</article>
 		</div>
