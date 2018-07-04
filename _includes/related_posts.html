@@ -25,6 +25,7 @@
 
         {% unless post.tags contains 'draft' %}
         <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ category }} </a></p>
+        <p class="post-meta no_space"><i class="fa fa-tags"></i> {% for category in post.category %} {{ category }}, {% endfor %}</p>
         <p class="fa fa-tags no_space post-meta">{{ post.categories }}</p>
         <p class="no_space">{{post.excerpt}}</p>
         {% endunless %}
