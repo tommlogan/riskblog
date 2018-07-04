@@ -35,16 +35,16 @@ banner: false
 		<div class="row">
 			<article class="6u 12u(narrower)">
 				{% if page.previous.url %}
-				<h4>Previous</h4>
-				<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
-				<p>{{page.previous.excerpt}}</p>
+					<h4>Previous</h4>
+					<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
+					<p>{{page.previous.excerpt}}</p>
 				{% endif %}
 			</article>
 			<article class="6u 12u(narrower)">
 				{% if page.next.url %}
-				<h4>Next</h4>
-				<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
-				<p>{{page.next.excerpt}}</p>
+					<h4>Next</h4>
+					<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
+					<p>{{page.next.excerpt}}</p>
 				{% endif %}
 			</article>
 		</div>
