@@ -1,6 +1,6 @@
 <div class="row">
-
-<h4>You May Also Enjoy</h4>
+  <article class="6u 12u(narrower)">
+  <h4>You May Also Enjoy</h4>
 
 {% assign maxRelated = 4 %}
 {% assign minCommonTags =  1 %}
@@ -22,12 +22,12 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-    <article class="6u 12u(narrower)">
+
         {% unless post.tags contains 'draft' %}
-        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></p>
+        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
         <p>{{post.excerpt}}</p>
         {% endunless %}
-    </article>
+
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}
@@ -35,5 +35,5 @@
     {% endif %}
 
   {% endfor %}
-
+  </article>
 </div>
