@@ -24,7 +24,8 @@
     {% if sameTagCount >= minCommonTags %}
 
         {% unless post.tags contains 'draft' %}
-        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ category }} </a><p class="fa fa-tags">{{ post.categories }}</p></p>
+        <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ category }} </a></p>
+        <p class="fa fa-tags no_space post-meta">{{ post.categories }}</p>
         <p class="no_space">{{post.excerpt}}</p>
         {% endunless %}
 
