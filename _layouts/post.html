@@ -48,13 +48,13 @@ banner: false
 				{% endif %}
 			</article>
 			<article class="6u 12u(narrower)">
-				{% if page.next.url %}
+				<!-- {% if page.next.url %} -->
 				{% unless page.next.tags contain 'draft' %}
 					<h4>Next</h4>
 					<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
 					<p>{{page.next.excerpt}}</p>
 				{% endunless %}
-				{% endif %}
+				<!-- {% endif %} -->
 			</article>
 		</div>
 		{% endif %}
