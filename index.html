@@ -8,7 +8,8 @@ excerpt: A risk and science blog by Tom Logan and Tim Williams
 
 	<!-- This loops through the paginated posts -->
 	{% for post in paginator.posts %}
-	  <section class="text">
+	  {% unless post.tags contains 'draft' %}
+		<section class="text">
 			<a href="{{ post.url }}"><img class="post-thumbnail" src="{{ post.thumbnail }}" ></a>
 	    <h1 class='post-title'><a href="{{ post.url }}">{{ post.title }}</a></h1>
 	    <div class="post-meta">
@@ -18,6 +19,7 @@ excerpt: A risk and science blog by Tom Logan and Tim Williams
 	      <p>{{ post.excerpt }}</p>
 	    </div>
 	  </section>
+		{% endunless %}
 	{% endfor %}
 
 	<!-- Pagination links -->
