@@ -37,7 +37,7 @@ banner: false
 		<div class="row">
 			<article class="6u 12u(narrower)">
 				{% if page.previous.url %}
-					{% unless page.previous.tag contains 'draft' %}
+					{% unless page.previous.tags contains 'draft' %}
 					<h4>Previous</h4>
 					<p class="no_space"><a href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
 					<p>{{page.previous.excerpt}}</p>
@@ -46,7 +46,7 @@ banner: false
 			</article>
 			<article class="6u 12u(narrower)">
 				{% if page.next.url %}
-					{% unless page.next.tag contains 'draft' %}
+					{% unless page.next.tags contains 'draft' %}
 					<h4>Next</h4>
 					<p class="no_space"><a href="{{ page.next.url }}">{{page.next.title}}</a></p>
 					<p>{{page.next.excerpt}}</p>
