@@ -2,7 +2,7 @@
 layout: post
 title:  "Neglecting future urban development and changing risks can lead to maladaptation to natural hazards"
 author: Tom Logan
-excerpt: Last week Hurricane Florence caused major damage along the East Coast of the USA. Following Florence and a year of record breaking heat waves and fires now is a good time to consider adapting to climate change and mitigating natural hazards. Are strategies we’re taking really going to work? Or is it possible that the engineering approaches taken to protect us are actually just making us more vulnerable?
+excerpt: Last week Hurricane Florence caused, and continues to cause, major damage along the East Coast of the USA. Following Florence and a year of record breaking heat waves and fires now is a good time to consider adapting to climate change and mitigating natural hazards. Are strategies we’re taking really going to work? Or is it possible that the engineering approaches taken to protect us are actually just making us more vulnerable?
 date:   2018-09-17
 categories: research
 comments: true
