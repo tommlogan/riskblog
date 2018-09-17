@@ -21,5 +21,6 @@ The paper was funded by the National Science Foundation, the Japanese Society fo
 
 
 This post was first published on the [Nature Research Sustainability Community](https://sustainabilitycommunity.nature.com/channels/1385-behind-the-paper).
+
 Journal reference:
 Tom M. Logan, Seth D. Guikema, Jeremy D. Bricker. Hard-adaptive measures can increase vulnerability to storm surge and tsunami hazards over time. Nature Sustainability, 2018; DOI: [10.1038/s41893-018-0137-6](https://rdcu.be/6IG5)
