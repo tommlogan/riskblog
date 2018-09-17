@@ -26,7 +26,7 @@ Although we demonstrate this in the case of tsunamis, the notion may be generali
 The paper was funded by the National Science Foundation, the Japanese Society for the Promotion of Science, the University of Michigan, and the Technical University of Delft’s Delta Infrastructure and Mobility Initiative.
 
 
-This post was first published on the [Nature Research Sustainability Community](https://sustainabilitycommunity.nature.com/channels/1385-behind-the-paper).
+This post was first published on the [Nature Research Sustainability Community](https://sustainabilitycommunity.nature.com/channels/1385-behind-the-paper/posts/38745-neglecting-future-urban-development-and-changing-risks-can-lead-to-maladaptation-to-natural-hazards).
 
 
 Journal reference:  
