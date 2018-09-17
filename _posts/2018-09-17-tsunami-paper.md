@@ -16,6 +16,7 @@ For example, consider a classic example of a flood risk assessment. The flood hy
 Two things need to happen:
 1.	Practitioners and researchers need to be aware of the possibility that by not including dynamic feedback, there risk assessments may be significantly wrong. I’m not convinced that they are aware even of the concept of maladaptation.
 2.	The community needs to understand that engineering adaptations have limitations and when they choose where to live, they may still have risks. For example, 55% of the US population lives in counties protected by levees.
+
 Although we demonstrate this in the case of tsunamis, the notion may be generalizable to other spatial and repeatable hazards such as flooding, wild fires, and storm surge. By modifying areas that are naturally at risk from these events so that people think it is safe to live there, we simply encourage that development and jeopardize people’s lives and livelihoods. It is perhaps better to modify where we live, rather than repeatedly try to force the natural environment to behave as we’d like.
 The paper was funded by the National Science Foundation, the Japanese Society for the Promotion of Science, the University of Michigan, and the Technical University of Delft’s Delta Infrastructure and Mobility Initiative.
 
