@@ -10,6 +10,8 @@ comments: true
 
 >*Last week Hurricane Florence caused, and continues to cause, major damage along the East Coast of the USA. Following Florence and a year of record breaking heat waves and fires now is a good time to consider adapting to climate change and mitigating natural hazards. Are strategies we’re taking really going to work? Or is it possible that the engineering approaches taken to protect us are actually just making us more vulnerable?*
 
+<img class ="image" src="/assets/blog/2018-09-17-hard-adaptation/cover.jpg"  width = "70%">
+
 In our pursuit to adapt to unavoidable climate change and natural hazards, we are in danger of making things worse for ourselves if we do not figure out how to avoid “maladaptation”. Yes, we must still act. But I’m arguing that we ensure we do so intelligently.  
 
 My paper, “[Hard-adaptive measures can increase vulnerability to storm surge and tsunami hazards over time](https://rdcu.be/6IG5)”, was published on Friday in Nature Sustainability. It makes two contributions: 1) We quantitatively show that existing adaptation approaches, such as building seawalls to protect from tsunami, can increase vulnerability; 2) In doing so, we demonstrate that neglecting dynamic feedbacks, such as urban development changes and changing risks, can substantially alter the assessment of whether strategies are effective or not.  
@@ -34,5 +36,3 @@ This post was first published on the [Nature Research Sustainability Community](
 
 Journal reference:  
 Tom M. Logan, Seth D. Guikema, Jeremy D. Bricker. Hard-adaptive measures can increase vulnerability to storm surge and tsunami hazards over time. Nature Sustainability, 2018; DOI: [10.1038/s41893-018-0137-6](https://rdcu.be/6IG5)
-
-<img class ="image" src="/assets/blog/2018-09-17-hard-adaptation/cover.jpg"  width = "70%">
