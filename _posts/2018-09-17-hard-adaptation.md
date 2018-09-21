@@ -10,7 +10,7 @@ comments: true
 
 >*Last week Hurricane Florence caused, and continues to cause, major damage along the East Coast of the USA. Following Florence and a year of record breaking heat waves and fires now is a good time to consider adapting to climate change and mitigating natural hazards. Are strategies we’re taking really going to work? Or is it possible that the engineering approaches taken to protect us are actually just making us more vulnerable?*
 
-<img class ="image" src="/assets/blog/2018-09-17-hard-adaptation/cover.jpg"  width = "70%">
+<img class ="image" src="/assets/blog/2018-09-17-hard-adaptation/cover.jpg"  width = "100%">
 
 In our pursuit to adapt to unavoidable climate change and natural hazards, we are in danger of making things worse for ourselves if we do not figure out how to avoid “maladaptation”. Yes, we must still act. But I’m arguing that we ensure we do so intelligently.  
 
