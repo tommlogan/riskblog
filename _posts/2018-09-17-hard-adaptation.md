@@ -16,6 +16,9 @@ My paper, “[Hard-adaptive measures can increase vulnerability to storm surge a
 
 For example, consider a classic example of a flood risk assessment. The flood hydraulic model captures how fluid moves and we can change the amount of fluid. Build a levee or river bank and the fluid will move differently, thus changing the risk map. The result is that development and investment occurs in these now “safe” areas. The issue is that this increased activity increases our risk to wall failure or extreme events. Essentially, making our communities potentially more vulnerable than before, when they were aware of the hazard.  
 
+<img class ="image" src="/assets/blog/2018-09-17-hard-adaptation/levee_towner.jpg"  width = "70%">
+
+
 Two things need to happen:
 1.	Practitioners and researchers need to be aware of the possibility that by not including dynamic feedback, there risk assessments may be significantly wrong. I’m not convinced that they are aware even of the concept of maladaptation.
 2.	The community needs to understand that engineering adaptations have limitations and when they choose where to live, they may still have risks. For example, 55% of the US population lives in counties protected by levees.  
@@ -31,3 +34,5 @@ This post was first published on the [Nature Research Sustainability Community](
 
 Journal reference:  
 Tom M. Logan, Seth D. Guikema, Jeremy D. Bricker. Hard-adaptive measures can increase vulnerability to storm surge and tsunami hazards over time. Nature Sustainability, 2018; DOI: [10.1038/s41893-018-0137-6](https://rdcu.be/6IG5)
+
+<img class ="image" src="/assets/blog/2018-09-17-hard-adaptation/cover.jpg"  width = "70%">
