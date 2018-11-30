@@ -35,4 +35,6 @@ This post was first published on the [Nature Research Sustainability Community](
 
 
 Journal reference:  
-Tom M. Logan, Seth D. Guikema, Jeremy D. Bricker. Hard-adaptive measures can increase vulnerability to storm surge and tsunami hazards over time. Nature Sustainability, 2018; DOI: [10.1038/s41893-018-0137-6](https://rdcu.be/6IG5)
+Tom M. Logan, Seth D. Guikema, Jeremy D. Bricker. Hard-adaptive measures can increase vulnerability to storm surge and tsunami hazards over time. Nature Sustainability, 2018; DOI: [10.1038/s41893-018-0137-6](https://www.nature.com/articles/s41893-018-0137-6)  
+
+<!-- The paper can be downloaded [here](https://drive.google.com/open?id=18ysV4FnK8B4PCnTbqKQBZI3gum5qUYPp) and the supplemental material [here](https://drive.google.com/file/d/1earNKIp6RXsXaWX5csp7vHk4kXxnXqpT/view?usp=sharing).  -->
