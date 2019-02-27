@@ -32,7 +32,7 @@ Once your directory has been cloned, add the structure
 I suggest working in Atom (because of it's Git integration). But Sublime or others are also good.
 
 # Virtual Environment
-My example will be for scraping in Python, so as with any Python coding project we'll be working in a virtual environment.  
+My example will be for scraping in Python, so, as with any Python coding project, we'll be working in a virtual environment.  
 Create one in the highest level of your project's directory.
 That is, in the code terminal you're using (OS dependent)
 1. cd to your project's directory.
