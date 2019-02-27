@@ -9,6 +9,8 @@ comments: true
 toc: true
 ---
 
+I have been asked to host a tutorial on web scraping for my research group. I figured I'd blog it so that it can be a reference in the future as well.
+
 
 # GitHub
 I'm not going to extol the virtues of GitHub, but rather assume that everyone is using it (or GitLab etc.).  
