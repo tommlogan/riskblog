@@ -98,7 +98,13 @@ I recommend the structure of this code be along the lines of:
 
 ### Scheduler
 This is the basic code for a scheduler.
+
 {% highlight python %}
+
+import time
+from datetime import datetime
+import schedule
+
 def main():
     '''
     creates an infinite loop and calls the scraper functions
@@ -128,8 +134,56 @@ def main():
 {% endhighlight %}
 
 ### Scraper code
+First off, let's see if we can scrape that URL you found earlier.
+Try: `content = requests.get(url).content`  
+Now print `content` and see that it prints what you saw on the browser.
+
+So define a function, you'll need the following packages
+
+{% highlight python %}
+from bs4 import BeautifulSoup
+
+
+def main():
+    '''
+    creates an infinite loop and calls the scraper functions
+    '''
+    # if you were to initiate a database, now's a good time.
+
+    # how long between scraping?
+    minutes_between_scraping = 15 # minutes
+
+    # this try/except loop is a good way to document errors
+    try:
+        # in this case "scraper_function" is the name of your scraper function
+        schedule.every(1).minutes.do(scraper_function, client)
+        # this is the infinite while loop
+        while True:
+            # you can change the unit of time here
+            scrape_time = (time.localtime().tm_min%minutes_between_scraping==0)
+            if scrape_time:
+                # runs the scraper
+                schedule.run_pending()
+                time.sleep(1)
+    except Exception as e:
+        # log when there is an error -> see my previous blog with some brief intro to logging
+        # e.g. log_error(e)
+        # or just print an error
+        print(e)
+{% endhighlight %}
 
 
 
-# Databases
-I thoroughly recommend InfluxDB as it is a temporal database with great documentation. But that's for another time.
+We need code that will run the above command, and then pull the data into a format that we can then store. So an important thing to think about now is how you're storing that data.
+
+
+### Storing data
+I thoroughly recommend InfluxDB as it is a temporal database with great documentation. But that's for another time. So for now, we'll store it in a text file. But what is the structure of the data? Every data set is different and considering its future use is critical to how it is stored.
+
+It would be easy to store the data with each row being a timestamp. But I think there are better ways. Instead, let's store each county outage as a row. That means that each timestamp will be repeated. Doing this means we can quickly filter by county, time, number of customers out etc.
+
+That is, the data structure I suggest we use is:
+```
+datetime | county_name | custs_out | custs_total | provider
+```
+`Provider` is optional here and would come in handy if you were to have a single dataset for multiple utilities.
