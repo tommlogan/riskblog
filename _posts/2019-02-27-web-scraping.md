@@ -35,6 +35,7 @@ I suggest working in Atom (because of it's Git integration). But Sublime or othe
 My example will be for scraping in Python, so, as with any Python coding project, we'll be working in a virtual environment.  
 Create one in the highest level of your project's directory.
 That is, in the code terminal you're using (OS dependent)
+0. (if you haven't already you'll need to install the ability to create virtual environments: `pip install virtualenv`)
 1. cd to your project's directory.
 2. `python3 -m virtualenv venv` or `python -m virtualenv venv`  
 
@@ -51,7 +52,51 @@ Windows: `venv\Scripts\activate`
 The result should be a `(venv)` showing on the left on your terminal active line.
 
 We can now install packages into the virtual environment without administrator privileges.  
-Go ahead and install the `requests` and `beautifulsoup` packages with:
-`pip install requests bs4`
+Go ahead and install the `requests`, `beautifulsoup`, and `schedule` packages with:
+`pip install requests bs4 schedule`
 
-# To be continued
+# Scraping
+I'm going to provide two examples. The first is scraping a website, this is most general. The second is scraping Google's Distance Matrix API, which is an example of API scraping.
+
+## Power outage scraping
+Let's scrape the electricity outages for the counties served by BGE.  
+Open the BGE site that has these outages: https://outagemap.bge.com/
+
+The irritating thing with many of these websites is how often they change, so I'll provide a generally description so (a) it's extendable to other sites, and (b) this tutorial isn't made completely redundant when they next update their website.
+
+The aim here is to regularly record the number of customers in each county without power. So the first step is to find that information on the site.
+In this case, this is available on the left hand side of the screen, click `summary` and then `Outages by County`. The result is a tabular popup that lists the information.
+
+<img align="center" src="/assets/blog/2019-02-27-web-scraping/outages_gui.png" width="40%">
+
+The next step is to figure out where that information is stored by the website. Most websites are comprised of data and code that formats and displays that data. We need to figure out where and how that data is stored. To look under-the-hood of the website we need to `Inspect` it (Chrome Windows: `Crtl+Shift+I`; Safari Mac: `Command+Option+i` - or Google the command for your browser and OS.) Once the inspector is open, refresh the page.
+
+<img align="center" src="/assets/blog/2019-02-27-web-scraping/inspector.png" width="60%">
+
+Now we need to find the data within this list of files. Often, and in this case, it's a .js file. For data such as this, it comes with a timestamp. Because of variation between websites, you need to search this list and look at the result in the box. Practice, and getting a feel for what you're looking for, makes this process faster.
+
+<img align="center" src="/assets/blog/2019-02-27-web-scraping/outages_inspector.png" width="40%">
+
+Now that you've found the information in the website that you want, you need to figure out how to access it. Right click on the name (in this case `report.js?timestamp=1551...` etc) and click `Open in new tab`. This is the text that we'll be downloading. (I can't stress enough, that websites are different and some will simply not let you do this. In those cases it does not mean that they cannot be scraped - but you need to dig more to figure out how. The ones that provide data in these json/js formats are ideal, but there are other formats that can be scraped.)
+Now copy the URL: e.g. `https://s3.amazonaws.com/outagemap.bge.com/data/interval_generation_data/2019_02_28_12_26_08/report.js?timestamp=1551374668531`
+(you can actually drop the info after the timestamp).
+
+For this website, there's one more thing you need from the website and then we can turn to the code. That's where the datetime stamp is stored. We know what the URL is, but the datetime stamp is a variable and that comes from the website. Go back to the inspector and find where that datetime information is. In this case it is in metadata.xml
+
+<img align="center" src="/assets/blog/2019-02-27-web-scraping/metadata.png" width="40%">
+
+So, following the same steps, we can get the URL as: `https://s3.amazonaws.com/outagemap.bge.com/data/alerts/metadata.xml`
+which is kindly datetime independent.
+
+Now over to the code.
+
+I recommend the structure of this code be along the lines of:
+1. wrapper function that runs every x minutes.
+2. function that scrapes and returns the data
+3. function that writes to a text file or, preferably, a database.
+
+
+
+
+# Databases
+I thoroughly recommend InfluxDB as it is a temporal database with great documentation. But that's for another time.
