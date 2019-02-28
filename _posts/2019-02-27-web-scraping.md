@@ -56,7 +56,7 @@ Go ahead and install the `requests`, `beautifulsoup`, and `schedule` packages wi
 `pip install requests bs4 schedule`
 
 # Scraping
-The first example is scraping a website, this is most general. 
+The first example is scraping a website, this is most general.
 
 ## Power outage scraping
 Let's scrape the electricity outages for the counties served by BGE.  
@@ -138,38 +138,26 @@ First off, let's see if we can scrape that URL you found earlier.
 Try: `content = requests.get(url).content`  
 Now print `content` and see that it prints what you saw on the browser.
 
+Now you need to scrape the timestamp.
+```
+    # datetime of the latest report, which is reported in a metadata file.
+    content = requests.get(metadata_url).content
+
+    # Pull the date out of the xml file, should look like "2015_03_02_20_17_31"
+    # Beauftifulsoup lets you find things in xml and html documents
+    soup = BeautifulSoup(content, "html.parser")
+    last_report_datetime = soup.find('root').find('directory').text
+```
+
+
 So define a function, you'll need the following packages
 
 {% highlight python %}
 from bs4 import BeautifulSoup
 
 
-def main():
-    '''
-    creates an infinite loop and calls the scraper functions
-    '''
-    # if you were to initiate a database, now's a good time.
+def scraper_function():
 
-    # how long between scraping?
-    minutes_between_scraping = 15 # minutes
-
-    # this try/except loop is a good way to document errors
-    try:
-        # in this case "scraper_function" is the name of your scraper function
-        schedule.every(1).minutes.do(scraper_function, client)
-        # this is the infinite while loop
-        while True:
-            # you can change the unit of time here
-            scrape_time = (time.localtime().tm_min%minutes_between_scraping==0)
-            if scrape_time:
-                # runs the scraper
-                schedule.run_pending()
-                time.sleep(1)
-    except Exception as e:
-        # log when there is an error -> see my previous blog with some brief intro to logging
-        # e.g. log_error(e)
-        # or just print an error
-        print(e)
 {% endhighlight %}
 
 
