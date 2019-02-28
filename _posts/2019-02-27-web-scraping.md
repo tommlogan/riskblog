@@ -140,13 +140,7 @@ Now print `content` and see that it prints what you saw on the browser.
 
 Now you need to scrape the timestamp.
 ```
-    # datetime of the latest report, which is reported in a metadata file.
-    content = requests.get(metadata_url).content
 
-    # Pull the date out of the xml file, should look like "2015_03_02_20_17_31"
-    # Beauftifulsoup lets you find things in xml and html documents
-    soup = BeautifulSoup(content, "html.parser")
-    last_report_datetime = soup.find('root').find('directory').text
 ```
 
 
@@ -155,8 +149,24 @@ So define a function, you'll need the following packages
 {% highlight python %}
 from bs4 import BeautifulSoup
 
-
 def scraper_function():
+
+  metadata_url = 'https://s3.amazonaws.com/outagemap.bge.com/data/alerts/metadata.xml'
+  # datetime of the latest report, which is reported in a metadata file.
+  content = requests.get(metadata_url).content
+
+  # Pull the date out of the xml file, should look like "2015_03_02_20_17_31"
+  # Beauftifulsoup lets you find things in xml and html documents
+  soup = BeautifulSoup(content, "html.parser")
+  last_report_datetime = soup.find('root').find('directory').text
+
+  # now update the report_url
+  report_url = 'https://s3.amazonaws.com/outagemap.bge.com/data/interval_generation_data/{}/report.js'
+
+  report_url = report_url.format(last_report_datetime)
+
+  # now pull the content
+  content = requests.get(report_url).content
 
 {% endhighlight %}
 
