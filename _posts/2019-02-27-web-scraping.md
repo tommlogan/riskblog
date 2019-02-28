@@ -125,7 +125,6 @@ def main():
             if scrape_time:
                 # runs the scraper
                 schedule.run_pending()
-                time.sleep(1)
     except Exception as e:
         # log when there is an error -> see my previous blog with some brief intro to logging
         # e.g. log_error(e)
@@ -171,10 +170,11 @@ def scraper_function():
   # decode the json data into a dictionary
   data_dict = json.loads(content.decode())
 
-  return(data_dict)
+  write_data(data_dict)
 ```
 {% endhighlight %}
 
+Note that the last line calls a function `write_data`, so we need to figure this out!
 
 ### Storing data
 An essential element of this is how you're storing storing this data.
@@ -190,4 +190,159 @@ datetime | county_name | custs_out | custs_total | provider
 
 So, back to the code.
 
-Look at the format of the data in `data_dict`.
+Look at the format of the data in `data_dict`.  
+This is a dictionary in Python. This becomes very useful as we can access the different components.
+Print `data_dict` and look at the keys. The county data is actually a list of dictionaries stored here: `data_dict['file_data']['curr_custs_aff']['areas'][0]['areas']`  
+So what we'll do is loop through these and write them to rows in the textfile/database.
+
+{% highlight python %}
+```
+import csv
+
+def write_data(data_dict):
+
+  # init the list of dictionaries that we will then write to the txtfile/db
+  outages = []
+
+  # loop through the rows in the data list
+  data_list = data_dict['file_data']['curr_custs_aff']['areas'][0]['areas']
+  for row in data_list:
+      # add to outage dictionary
+      outage = {
+          "time": str(datetime.now()),
+          "utility" : company_name,
+          "county": row['area_name'],
+          "custs_out": row['custs_out'],
+          "custs_total": row['total_custs'],
+          }
+      outages.append(outage)
+
+  # now write to the textfile or database
+  filename = 'data/outages.csv'
+  # check that the file exists
+  file_exists = os.path.exists(filename)
+  keys = outages[0].keys()
+  if not file_exists:
+      # if the file doesn't exist, write the header row
+      with open(filename, 'w', newline='') as f:
+          dict_writer = csv.DictWriter(f, keys)
+          dict_writer.writeheader()
+  # if the file does exist, open and append the results
+  with open(filename, 'a', newline='') as f:
+      dict_writer = csv.DictWriter(f, keys)
+      dict_writer.writerows(outages)
+
+```
+{% endhighlight %}
+
+# Putting it all together
+
+And this should be all you need. Save this as something like `elect_scraper.py` and from the terminal, in the upper level of this directory, you can run it with `python src/elect_scraper.py` and it'll save data into the `data/` folder.
+
+{% highlight python %}
+```
+import csv
+from bs4 import BeautifulSoup
+import json
+import requests
+import time
+from datetime import datetime
+import schedule
+
+def main():
+    '''
+    Create an infinite loop and call the scraper function(s)
+    '''
+    # if you were to initiate a database, now's a good time.
+
+    # how long between scraping?
+    minutes_between_scraping = 15 # minutes
+
+    # this try/except loop is a good way to document errors
+    try:
+        # in this case "scraper_function" is the name of your scraper function
+        schedule.every(1).minutes.do(scraper_function)
+        # this is the infinite while loop
+        while True:
+            # you can change the unit of time here
+            scrape_time = (time.localtime().tm_min%minutes_between_scraping==0)
+            if scrape_time:
+                # runs the scraper
+                schedule.run_pending()
+    except Exception as e:
+        # log when there is an error -> see my previous blog with some brief intro to logging
+        # e.g. log_error(e)
+        # or just print an error
+        print(e)
+
+
+def scraper_function():
+  '''
+    Scrape the website data
+  '''
+
+  metadata_url = 'https://s3.amazonaws.com/outagemap.bge.com/data/alerts/metadata.xml'
+  # datetime of the latest report, which is reported in a metadata file.
+  content = requests.get(metadata_url).content
+
+  # Pull the date out of the xml file, should look like "2015_03_02_20_17_31"
+  # Beauftifulsoup lets you find things in xml and html documents
+  soup = BeautifulSoup(content, "html.parser")
+  last_report_datetime = soup.find('root').find('directory').text
+
+  # now update the report_url
+  report_url = 'https://s3.amazonaws.com/outagemap.bge.com/data/interval_generation_data/{}/report.js'
+
+  report_url = report_url.format(last_report_datetime)
+
+  # now pull the content
+  content = requests.get(report_url).content
+
+  # decode the json data into a dictionary
+  data_dict = json.loads(content.decode())
+
+  write_data(data_dict)
+
+
+def write_data(data_dict):
+  '''
+    Write the data to a csv or a database
+  '''
+  # init the list of dictionaries that we will then write to the txtfile/db
+  outages = []
+
+  # loop through the rows in the data list
+  data_list = data_dict['file_data']['curr_custs_aff']['areas'][0]['areas']
+  for row in data_list:
+      # add to outage dictionary
+      outage = {
+          "time": str(datetime.now()),
+          "utility" : company_name,
+          "county": row['area_name'],
+          "custs_out": row['custs_out'],
+          "custs_total": row['total_custs'],
+          }
+      outages.append(outage)
+
+  # now write to the textfile or database
+  filename = 'data/outages.csv'
+  # check that the file exists
+  file_exists = os.path.exists(filename)
+  keys = outages[0].keys()
+  if not file_exists:
+      # if the file doesn't exist, write the header row
+      with open(filename, 'w', newline='') as f:
+          dict_writer = csv.DictWriter(f, keys)
+          dict_writer.writeheader()
+  # if the file does exist, open and append the results
+  with open(filename, 'a', newline='') as f:
+      dict_writer = csv.DictWriter(f, keys)
+      dict_writer.writerows(outages)
+
+
+if __name__ == '__main__':
+    # run the scraper
+    main()
+
+```
+{% endhighlight %}
