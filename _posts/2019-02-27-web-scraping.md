@@ -100,7 +100,7 @@ I recommend the structure of this code be along the lines of:
 This is the basic code for a scheduler.
 
 {% highlight python %}
-
+```
 import time
 from datetime import datetime
 import schedule
@@ -131,6 +131,7 @@ def main():
         # e.g. log_error(e)
         # or just print an error
         print(e)
+```
 {% endhighlight %}
 
 ### Scraper code
@@ -138,15 +139,12 @@ First off, let's see if we can scrape that URL you found earlier.
 Try: `content = requests.get(url).content`  
 Now print `content` and see that it prints what you saw on the browser.
 
-Now you need to scrape the timestamp.
-```
+So here is an example of a scraping function.
 
-```
-
-
-So define a function, you'll need the following packages
+We first get the datetime stamp, then update the data's URL so that we can download that. Finally we decode that data into a dictionary so we can access the data next.
 
 {% highlight python %}
+```
 from bs4 import BeautifulSoup
 import json
 import requests
@@ -174,15 +172,12 @@ def scraper_function():
   data_dict = json.loads(content.decode())
 
   return(data_dict)
-
+```
 {% endhighlight %}
 
 
-
-We need code that will run the above command, and then pull the data into a format that we can then store. So an important thing to think about now is how you're storing that data.
-
-
 ### Storing data
+An essential element of this is how you're storing storing this data.
 I thoroughly recommend InfluxDB as it is a temporal database with great documentation. But that's for another time. So for now, we'll store it in a text file. But what is the structure of the data? Every data set is different and considering its future use is critical to how it is stored.
 
 It would be easy to store the data with each row being a timestamp. But I think there are better ways. Instead, let's store each county outage as a row. That means that each timestamp will be repeated. Doing this means we can quickly filter by county, time, number of customers out etc.
@@ -192,3 +187,7 @@ That is, the data structure I suggest we use is:
 datetime | county_name | custs_out | custs_total | provider
 ```
 `Provider` is optional here and would come in handy if you were to have a single dataset for multiple utilities.
+
+So, back to the code.
+
+Look at the format of the data in `data_dict`.
