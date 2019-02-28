@@ -56,7 +56,7 @@ Go ahead and install the `requests`, `beautifulsoup`, and `schedule` packages wi
 `pip install requests bs4 schedule`
 
 # Scraping
-I'm going to provide two examples. The first is scraping a website, this is most general. The second is scraping Google's Distance Matrix API, which is an example of API scraping.
+The first example is scraping a website, this is most general. 
 
 ## Power outage scraping
 Let's scrape the electricity outages for the counties served by BGE.  
