@@ -67,15 +67,15 @@ The irritating thing with many of these websites is how often they change, so I'
 The aim here is to regularly record the number of customers in each county without power. So the first step is to find that information on the site.
 In this case, this is available on the left hand side of the screen, click `summary` and then `Outages by County`. The result is a tabular popup that lists the information.
 
-<img align="center" src="/assets/blog/2019-02-27-web-scraping/outages_gui.png" width="40%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/outages_gui.PNG" width="40%">
 
 The next step is to figure out where that information is stored by the website. Most websites are comprised of data and code that formats and displays that data. We need to figure out where and how that data is stored. To look under-the-hood of the website we need to `Inspect` it (Chrome Windows: `Crtl+Shift+I`; Safari Mac: `Command+Option+i` - or Google the command for your browser and OS.) Once the inspector is open, refresh the page.
 
-<img align="center" src="/assets/blog/2019-02-27-web-scraping/inspector.png" width="60%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/inspector.PNG" width="60%">
 
 Now we need to find the data within this list of files. Often, and in this case, it's a .js file. For data such as this, it comes with a timestamp. Because of variation between websites, you need to search this list and look at the result in the box. Practice, and getting a feel for what you're looking for, makes this process faster.
 
-<img align="center" src="/assets/blog/2019-02-27-web-scraping/outages_inspector.png" width="40%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/outages_inspector.PNG" width="40%">
 
 Now that you've found the information in the website that you want, you need to figure out how to access it. Right click on the name (in this case `report.js?timestamp=1551...` etc) and click `Open in new tab`. This is the text that we'll be downloading. (I can't stress enough, that websites are different and some will simply not let you do this. In those cases it does not mean that they cannot be scraped - but you need to dig more to figure out how. The ones that provide data in these json/js formats are ideal, but there are other formats that can be scraped.)
 Now copy the URL: e.g. `https://s3.amazonaws.com/outagemap.bge.com/data/interval_generation_data/2019_02_28_12_26_08/report.js?timestamp=1551374668531`
@@ -83,7 +83,7 @@ Now copy the URL: e.g. `https://s3.amazonaws.com/outagemap.bge.com/data/interval
 
 For this website, there's one more thing you need from the website and then we can turn to the code. That's where the datetime stamp is stored. We know what the URL is, but the datetime stamp is a variable and that comes from the website. Go back to the inspector and find where that datetime information is. In this case it is in metadata.xml
 
-<img class="image" src="/assets/blog/2019-02-27-web-scraping/metadata.png" width="40%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/metadata.PNG" width="40%">
 
 So, following the same steps, we can get the URL as: `https://s3.amazonaws.com/outagemap.bge.com/data/alerts/metadata.xml`
 which is kindly datetime independent.
