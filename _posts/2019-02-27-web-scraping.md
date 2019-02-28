@@ -117,7 +117,7 @@ def main():
     # this try/except loop is a good way to document errors
     try:
         # in this case "scraper_function" is the name of your scraper function
-        schedule.every(1).minutes.do(scraper_function, client)
+        schedule.every(1).minutes.do(scraper_function)
         # this is the infinite while loop
         while True:
             # you can change the unit of time here
@@ -148,6 +148,8 @@ So define a function, you'll need the following packages
 
 {% highlight python %}
 from bs4 import BeautifulSoup
+import json
+import requests
 
 def scraper_function():
 
@@ -167,6 +169,11 @@ def scraper_function():
 
   # now pull the content
   content = requests.get(report_url).content
+
+  # decode the json data into a dictionary
+  data_dict = json.loads(content.decode())
+
+  return(data_dict)
 
 {% endhighlight %}
 
