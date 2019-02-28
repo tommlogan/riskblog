@@ -71,11 +71,11 @@ In this case, this is available on the left hand side of the screen, click `summ
 
 The next step is to figure out where that information is stored by the website. Most websites are comprised of data and code that formats and displays that data. We need to figure out where and how that data is stored. To look under-the-hood of the website we need to `Inspect` it (Chrome Windows: `Crtl+Shift+I`; Safari Mac: `Command+Option+i` - or Google the command for your browser and OS.) Once the inspector is open, refresh the page.
 
-<img class="image" src="/assets/blog/2019-02-27-web-scraping/inspector.PNG" width="60%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/inspector.PNG" width="100%">
 
 Now we need to find the data within this list of files. Often, and in this case, it's a .js file. For data such as this, it comes with a timestamp. Because of variation between websites, you need to search this list and look at the result in the box. Practice, and getting a feel for what you're looking for, makes this process faster.
 
-<img class="image" src="/assets/blog/2019-02-27-web-scraping/outages_inspector.PNG" width="40%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/outages_inspector.PNG" width="80%">
 
 Now that you've found the information in the website that you want, you need to figure out how to access it. Right click on the name (in this case `report.js?timestamp=1551...` etc) and click `Open in new tab`. This is the text that we'll be downloading. (I can't stress enough, that websites are different and some will simply not let you do this. In those cases it does not mean that they cannot be scraped - but you need to dig more to figure out how. The ones that provide data in these json/js formats are ideal, but there are other formats that can be scraped.)
 Now copy the URL: e.g. `https://s3.amazonaws.com/outagemap.bge.com/data/interval_generation_data/2019_02_28_12_26_08/report.js?timestamp=1551374668531`
@@ -83,7 +83,7 @@ Now copy the URL: e.g. `https://s3.amazonaws.com/outagemap.bge.com/data/interval
 
 For this website, there's one more thing you need from the website and then we can turn to the code. That's where the datetime stamp is stored. We know what the URL is, but the datetime stamp is a variable and that comes from the website. Go back to the inspector and find where that datetime information is. In this case it is in metadata.xml
 
-<img class="image" src="/assets/blog/2019-02-27-web-scraping/metadata.PNG" width="40%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/metadata.PNG" width="80%">
 
 So, following the same steps, we can get the URL as: `https://s3.amazonaws.com/outagemap.bge.com/data/alerts/metadata.xml`
 which is kindly datetime independent.
@@ -95,6 +95,39 @@ I recommend the structure of this code be along the lines of:
 2. function that scrapes and returns the data
 3. function that writes to a text file or, preferably, a database.
 
+
+### Scheduler
+This is the basic code for a scheduler.
+{% highlight python %}
+def main():
+    '''
+    creates an infinite loop and calls the scraper functions
+    '''
+    # if you were to initiate a database, now's a good time.
+
+    # how long between scraping?
+    minutes_between_scraping = 15 # minutes
+
+    # this try/except loop is a good way to document errors
+    try:
+        # in this case "scraper_function" is the name of your scraper function
+        schedule.every(1).minutes.do(scraper_function, client)
+        # this is the infinite while loop
+        while True:
+            # you can change the unit of time here
+            scrape_time = (time.localtime().tm_min%minutes_between_scraping==0)
+            if scrape_time:
+                # runs the scraper
+                schedule.run_pending()
+                time.sleep(1)
+    except Exception as e:
+        # log when there is an error -> see my previous blog with some brief intro to logging
+        # e.g. log_error(e)
+        # or just print an error
+        print(e)
+{% endhighlight %}
+
+### Scraper code
 
 
 
