@@ -100,7 +100,7 @@ I recommend the structure of this code be along the lines of:
 This is the basic code for a scheduler.
 
 {% highlight python %}
-```
+
 import time
 from datetime import datetime
 import schedule
@@ -130,7 +130,7 @@ def main():
         # e.g. log_error(e)
         # or just print an error
         print(e)
-```
+
 {% endhighlight %}
 
 ### Scraper code
@@ -143,7 +143,7 @@ So here is an example of a scraping function.
 We first get the datetime stamp, then update the data's URL so that we can download that. Finally we decode that data into a dictionary so we can access the data next.
 
 {% highlight python %}
-```
+
 from bs4 import BeautifulSoup
 import json
 import requests
@@ -171,7 +171,7 @@ def scraper_function():
   data_dict = json.loads(content.decode())
 
   write_data(data_dict)
-```
+
 {% endhighlight %}
 
 Note that the last line calls a function `write_data`, so we need to figure this out!
@@ -196,7 +196,7 @@ Print `data_dict` and look at the keys. The county data is actually a list of di
 So what we'll do is loop through these and write them to rows in the textfile/database.
 
 {% highlight python %}
-```
+
 import csv
 
 def write_data(data_dict):
@@ -232,7 +232,7 @@ def write_data(data_dict):
       dict_writer = csv.DictWriter(f, keys)
       dict_writer.writerows(outages)
 
-```
+
 {% endhighlight %}
 
 # Putting it all together
@@ -240,7 +240,6 @@ def write_data(data_dict):
 And this should be all you need. Save this as something like `elect_scraper.py` and from the terminal, in the upper level of this directory, you can run it with `python src/elect_scraper.py` and it'll save data into the `data/` folder.
 
 {% highlight python %}
-```
 import csv
 from bs4 import BeautifulSoup
 import json
@@ -343,6 +342,4 @@ def write_data(data_dict):
 if __name__ == '__main__':
     # run the scraper
     main()
-
-```
 {% endhighlight %}
