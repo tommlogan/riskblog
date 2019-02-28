@@ -83,7 +83,7 @@ Now copy the URL: e.g. `https://s3.amazonaws.com/outagemap.bge.com/data/interval
 
 For this website, there's one more thing you need from the website and then we can turn to the code. That's where the datetime stamp is stored. We know what the URL is, but the datetime stamp is a variable and that comes from the website. Go back to the inspector and find where that datetime information is. In this case it is in metadata.xml
 
-<img align="center" src="/assets/blog/2019-02-27-web-scraping/metadata.png" width="40%">
+<img class="image" src="/assets/blog/2019-02-27-web-scraping/metadata.png" width="40%">
 
 So, following the same steps, we can get the URL as: `https://s3.amazonaws.com/outagemap.bge.com/data/alerts/metadata.xml`
 which is kindly datetime independent.
