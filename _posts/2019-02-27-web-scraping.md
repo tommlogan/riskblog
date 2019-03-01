@@ -55,10 +55,7 @@ We can now install packages into the virtual environment without administrator p
 Go ahead and install the `requests`, `beautifulsoup`, and `schedule` packages with:
 `pip install requests bs4 schedule`
 
-# Scraping
-The first example is scraping a website, this is most general.
-
-## Power outage scraping
+# E.g. Power outage scraping
 Let's scrape the electricity outages for the counties served by BGE.  
 Open the BGE site that has these outages: https://outagemap.bge.com/
 
@@ -96,7 +93,7 @@ I recommend the structure of this code be along the lines of:
 3. function that writes to a text file or, preferably, a database.
 
 
-### Scheduler
+## Scheduler
 This is the basic code for a scheduler.
 
 {% highlight python %}
@@ -116,15 +113,16 @@ def main():
 
     # this try/except loop is a good way to document errors
     try:
-        # in this case "scraper_function" is the name of your scraper function
-        schedule.every(1).minutes.do(scraper_function)
         # this is the infinite while loop
         while True:
+            # runs the scraper at a set clock time. e.g. on the quarter hour.
             # you can change the unit of time here
             scrape_time = (time.localtime().tm_min%minutes_between_scraping==0)
             if scrape_time:
-                # runs the scraper
-                schedule.run_pending()
+                # run the scraper
+                scraper_function()
+                # pause for a minute
+                time.sleep(60)
     except Exception as e:
         # log when there is an error -> see my previous blog with some brief intro to logging
         # e.g. log_error(e)
@@ -133,7 +131,7 @@ def main():
 
 {% endhighlight %}
 
-### Scraper code
+## Scraper code
 First off, let's see if we can scrape that URL you found earlier.
 Try: `content = requests.get(url).content`  
 Now print `content` and see that it prints what you saw on the browser.
@@ -176,7 +174,7 @@ def scraper_function():
 
 Note that the last line calls a function `write_data`, so we need to figure this out!
 
-### Storing data
+## Storing data
 An essential element of this is how you're storing storing this data.
 I thoroughly recommend InfluxDB as it is a temporal database with great documentation. But that's for another time. So for now, we'll store it in a text file. But what is the structure of the data? Every data set is different and considering its future use is critical to how it is stored.
 
@@ -263,11 +261,14 @@ def main():
         schedule.every(1).minutes.do(scraper_function)
         # this is the infinite while loop
         while True:
+            # runs the scraper at a set clock time. e.g. on the quarter hour.
             # you can change the unit of time here
             scrape_time = (time.localtime().tm_min%minutes_between_scraping==0)
             if scrape_time:
-                # runs the scraper
-                schedule.run_pending()
+                # run the scraper
+                scraper_function()
+                # pause for a minute
+                time.sleep(60)
     except Exception as e:
         # log when there is an error -> see my previous blog with some brief intro to logging
         # e.g. log_error(e)
