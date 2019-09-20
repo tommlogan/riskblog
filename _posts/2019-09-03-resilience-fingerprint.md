@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Realtime Resilience? On the uses of social media for understanding communitites"
-author: Ben Rachunok [brachunok.com](brachunok.com)
+author: Ben Rachunok
 excerpt: Hurricane Dorian continues to move up the east coast of the US, causing catastrophic damage to communities. In the era of big data, what kind of analysis can we do to understand how communities respond to disasters in real time?
 date:   2019-09-20
 categories: research
@@ -11,7 +11,7 @@ comments: true
 >*Disasters are acts of God, but damages are acts of Man'
 >--(1945) Gilbert White. 
 
-<img class ="image" src="/assets/blog/2019-09-03-resilience-fingerprint/overview_figure.jpeg"  width = "100%">
+<img class ="image" src="/assets/blog/2019-09-03-resilience-fingerprint/overview_figure.jpeg"  width = "80%">
 
 When disaster strikes, what makes a community more or less resilient? A landmark [2008 paper by Cutter, Barns, Berry et al.](https://doi.org/10.1016/j.gloenvcha.2008.07.013) proposed a framework for overall community reslience into a series of categories. They propose that community resilience is mutidimensional, built on *ecological, social, economic, institutional, infrastructure, and community competance* dimensions. 
 
