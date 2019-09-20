@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Realtime Resilience? On the uses of social media for understanding communitites"
-author: Ben Rachunok. [brachunok.com](
+author: Ben Rachunok [brachunok.com](brachunok.com)
 excerpt: Hurricane Dorian continues to move up the east coast of the US, causing catastrophic damage to communities. In the era of big data, what kind of analysis can we do to understand how communities respond to disasters in real time?
-date:   2019-09-03
+date:   2019-09-20
 categories: research
 comments: true
 ---
@@ -22,7 +22,7 @@ From this, we find two important contributions: (1) *types* of disasters have a 
 In the folling picture, for example, is a visualization of a *fingerprint* in the heatmap on the left. For the tweets from a disaster (in this case, the 2018 Hurricane Florence), a more red square indicates a stronger presence of the two elements of resilience occurring together in the data after adjusting. The figure on the right shows all the disasters, plotted based on their principle components demonstrating the similarities in the patterns of tweets.
 <img class ="image" src="/assets/blog/2019-09-03-resilience-fingerprint/algorithms.png"  width = "909px">
 
-The key takeaway is that if we assume Tweets represnt a version of how individuals respond to disasters, we find that different **types** (hurricanes, earthquakes, political) events have commonalities in how they impact communitites. This work forms the basis of a new body of work in which we hope we can make *predictions* about how a community will respond to a disaster in the future. 
+The key takeaway is that if we assume Tweets represnt a version of how individuals respond to disasters, we find that different **types** (hurricanes, earthquakes, political) events have commonalities in how they impact communitites. This work forms the basis of a new body of work in which we hope we can make *predictions* about how a community will respond to a disaster in the future. The goal is to be able to predict the future outcomes of community resilience in real time!
 
 
 [For more information, the UN office of Disaster Risk Reduction has written a fun summary](https://sustainabilitycommunity.nature.com/channels/1385-behind-the-paper/posts/38745-neglecting-future-urban-development-and-changing-risks-can-lead-to-maladaptation-to-natural-hazards) and you can find the paper here:
