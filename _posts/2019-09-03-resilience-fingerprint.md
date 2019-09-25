@@ -25,9 +25,9 @@ In the folling picture, for example, is a visualization of a *fingerprint* in th
 The key takeaway is that if we assume Tweets represnt a version of how individuals respond to disasters, we find that different **types** (hurricanes, earthquakes, political) events have commonalities in how they impact communitites. This work forms the basis of a new body of work in which we hope we can make *predictions* about how a community will respond to a disaster in the future. The goal is to be able to predict the future outcomes of community resilience in real time!
 
 
-[For more information, the UN office of Disaster Risk Reduction has written a fun summary](https://sustainabilitycommunity.nature.com/channels/1385-behind-the-paper/posts/38745-neglecting-future-urban-development-and-changing-risks-can-lead-to-maladaptation-to-natural-hazards) and you can find the paper here:
+[For more information, the UN office of Disaster Risk Reduction has written a fun summary](https://www.preventionweb.net/news/view/66690) and the paper can be found here:
 
-Rachunok, Benjamin A., Jackson B. Bennett, and Roshanak Nateghi. "Twitter and Disasters: A Social Resilience Fingerprint." IEEE Access 7 (2019): 58495-58506. [DOI: 10.1109/ACCESS.2019.2914797](10.1109/ACCESS.2019.2914797)
+Rachunok, Benjamin A., Jackson B. Bennett, and Roshanak Nateghi. "Twitter and Disasters: A Social Resilience Fingerprint." IEEE Access 7 (2019): 58495-58506. [DOI: 10.1109/ACCESS.2019.2914797](https://doi.org/10.1109/ACCESS.2019.2914797)
 
 (And it's open access!!)
 
