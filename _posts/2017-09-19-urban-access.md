@@ -65,6 +65,6 @@ If necessary, results from our method can be aggregated up to a desired spatial 
 
 To read our [paper click here.](http://journals.sagepub.com/doi/10.1177/2399808317736528)
 
-Instructions on setting up OSRM, the network distance calculator we used in our model, can be found [here]('http://tomlogan.co.nz/blogs/querying_OSRM.html').
+Instructions on setting up OSRM, the network distance calculator we used in our model, can be found [here](http://tomlogan.co.nz/blogs/querying_OSRM.html).
 
 <img class ="image" src="/assets/blog/2017-09-19-urban-access/crowd_walk.jpeg" width = "100%">
