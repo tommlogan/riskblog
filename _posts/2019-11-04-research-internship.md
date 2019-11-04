@@ -8,6 +8,8 @@ categories: research-practice comment
 comments: true
 ---
 
+This blog is also posted on the [POLISES website](http://www.polises.de/blog/learning-from-my-research-internship-to-enhance-my-phd.html).
+
 >### *A woodsman was once asked, “What would you do if you had just five minutes to chop down a tree?” He answered, “I would spend the first two and a half minutes sharpening my axe.”* [1]
 
 So it felt when I began my short-term research stay as a visiting PhD student at the Helmholtz Center for Environmental Research (UFZ) in Germany. I had three months, and the goal was to produce a draft version of a paper by the end. As any young, ambitious scientist, I was eager - yet slightly anxious - for the challenge.
