@@ -30,7 +30,7 @@ On Monday and Tuesday morning we will have discussion sessions and workshops.
 
 # More information
 More information will be posted here as it becomes available.
-Feel free to reach out to (Tom)[mailto:tom.logan@canterbury.ac.nz].
+Feel free to reach out to [Tom](mailto:tom.logan@canterbury.ac.nz).
 
 # Big thanks
 This workshop is funded by a Strategic Initiative Grant from the Society of Risk Analysis.
