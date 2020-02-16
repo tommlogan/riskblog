@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="refresh" content="1;url={{ page.redirect }}"/>
+    <link rel="canonical" href="{{ page.redirect }}"/>
+    <script type="text/javascript">
+            window.location.href = "{{ page.redirect }}"
+    </script>
+    <title>Page Redirection</title>
+</head>
+
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		{% include nav_bar.html %}
+	</header>
+
+	<body class="index">
+		<div id="page-wrapper">
+
+			<!-- Banner -->
+			{% if page.banner == true %}
+				<section id="banner">
+					{% include header.html %}
+				</section>
+				{% endif %}
+
+				<!-- Main -->
+				<article id="main">
+
+					<div class="content">
+						<section>
+
+							If you are not redirected automatically, follow <a href='{{ page.redirect }}'>this link</a>.
+
+						</section>
+					</div>
+
+				</article>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<!-- <ul class="icons"> -->
+						<!-- <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="https://scholar.google.co.nz/citations?hl=en&view_op=list_works&gmla=AJsN-F7ua45BO8i1DHccKCUj7VPZqMzoZxfTFasDQNl2_V7GtlfsDKuC70DN5-8fIn8VadBbpoEfmI9BTw5FwKbSHXWa_N0IKA&user=NqnK14EAAAAJ" target="_blank" class="icon circle fa-graduation-cap"><span class="label">Google</span></a></li> -->
+						<!-- <li><a href="https://github.com/tommlogan" target="_blank" class="icon circle fa-github"><span class="label">Github</span></a></li> -->
+						<!-- <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+					<!-- </ul> -->
+
+					<ul class="copyright">
+						<li>Copyright &copy; 2018 Logan & Williams</li><li>Design: <a href="http://html5up.net">HTML5 UP: Twenty</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+			{% if jekyll.environment == 'production' %}
+		  {% include analytics.html %}
+		  {% endif %}
+		  {% include slider_scripts.html %}
+	</body>
+</html>
