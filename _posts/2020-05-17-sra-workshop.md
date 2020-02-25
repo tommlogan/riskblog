@@ -8,7 +8,9 @@ categories: comment
 comments: false
 toc: true
 ---
-
+<p align="center">
+  <img src = '/assets/blog/2020-05-17-risk-workshop/logo.png' width="40%">
+</p>
 # Purpose
 How will society address the complex challenges it faces in the future?
 This is a question extremely pertinent to young people.
@@ -22,6 +24,10 @@ The focus of the workshop will be student engagement and discussion, however we 
 
 # When and where
 The workshop will be hosted at the University of Michigan, Ann Arbor over the 17-19th of May 2020.
+
+# Registration
+Registration is open until the 15th of March, when we will begin reviewing applications.
+[The form is here.](https://forms.gle/WaPTicYURqGEHYFNA)
 
 # Schedule
 Participants will arrive on Sunday for a introductory dinner and welcome that evening.
