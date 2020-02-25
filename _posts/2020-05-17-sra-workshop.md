@@ -8,9 +8,7 @@ categories: comment
 comments: false
 toc: true
 ---
-<p align="center">
-  <img src = '/assets/blog/2020-05-17-risk-workshop/logo.png' width="40%">
-</p>
+
 # Purpose
 How will society address the complex challenges it faces in the future?
 This is a question extremely pertinent to young people.
@@ -33,10 +31,12 @@ Registration is open until the 15th of March, when we will begin reviewing appli
 Participants will arrive on Sunday for a introductory dinner and welcome that evening.
 On Monday and Tuesday morning we will have discussion sessions and workshops.
 
-
 # More information
 More information will be posted here as it becomes available.
 Feel free to reach out to [Tom](mailto:tom.logan@canterbury.ac.nz).
 
 # Big thanks
 This workshop is funded by a Strategic Initiative Grant from the Society of Risk Analysis.
+<p align="center">
+  <img src = '/assets/blog/2020-05-17-risk-workshop/logo.png' width="40%">
+</p>
