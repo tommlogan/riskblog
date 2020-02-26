@@ -24,7 +24,7 @@ The focus of the workshop will be student engagement and discussion, however we 
 The workshop will be hosted at the University of Michigan, Ann Arbor over the 17-19th of May 2020.
 
 # Registration
-Registration is open until the 15th of March, when we will begin reviewing applications.
+Registration is open until March 14th at 5pm Eastern Time (USA), when we will begin reviewing applications.
 [The form is here.](https://forms.gle/WaPTicYURqGEHYFNA)
 
 # Schedule
