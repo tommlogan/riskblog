@@ -23,6 +23,9 @@ The focus of the workshop will be student engagement and discussion, however we 
 # When and where
 The workshop will be hosted at the University of Michigan, Ann Arbor over the 17-19th of May 2020.
 
+# Accommodation and travel
+SRA will cover lodging and some meal costs for the 2-day workshop, with limited travel funding available as well!
+
 # Registration
 Registration is open until March 14th at 5pm Eastern Time (USA), when we will begin reviewing applications.
 [The form is here.](https://forms.gle/WaPTicYURqGEHYFNA)
