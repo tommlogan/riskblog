@@ -32,8 +32,8 @@ Participants will arrive on Sunday for a introductory dinner and welcome that ev
 On Monday and Tuesday morning we will have discussion sessions and workshops.
 
 # Guest speakers
-Some of the workshops will be led by leading members of the Society of Risk Analysis (SRA). These include:\\
-* Professor Seth Guikema (SRA President) - "how to write a paper for the journal of risk analysis"\\
+Some of the workshops will be led by leading members of the Society of Risk Analysis (SRA). These include:
+* Professor Seth Guikema (SRA President) - "how to write a paper for the journal of risk analysis"
 * Robyn Wilson (SRA President-elect) - "how to engage with and influence policy as a risk scientist"
 
 # More information
