@@ -10,7 +10,7 @@ toc: true
 ---
 
 # Postponed
-Due to COVID-19 and associated travel complications, the workshop has been postponed as of Mar-3.
+Due to COVID-19 and associated travel complications, the workshop has been postponed as of Mar-6.
 We will update this site with further details as they come available.
 If you are still interested, please register anyway so that we have you details and can keep you informed.
 
