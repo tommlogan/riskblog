@@ -146,6 +146,23 @@ h4 {
 	padding: 2em;
 }
 
+.list-footer {
+	list-style-type: none;
+	color: #000;
+	/* text-align:left; */
+	font-size: inherit;
+	line-height: normal;
+	font-size: 12pt;
+
+}
+
+.list-footer a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: none;
+	font-weight: 200;
+}
+
 /* Post */
 .post p, h0, h1, h2, h3, h4, div, li {
 	color: #000;

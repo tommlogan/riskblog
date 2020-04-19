@@ -20,21 +20,24 @@ description: >- # this means to ignore newlines until "baseurl:"
   A risk and science blog by young risk scientists
 baseurl: "" # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: TomMLogan
-github_username:  tommlogan
-linkedin_username: tom-logan-4b262a5b/
-scholar_username: NqnK14EAAAAJ
+# twitter_username: TomMLogan
+# github_username:  tommlogan
+# linkedin_username: tom-logan-4b262a5b/
+# scholar_username: NqnK14EAAAAJ
 image: http://reckoningrisk.com/assets/img/logo_social.jpg
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 # source: /_jekyll
 # destination: /blogs
-permalink: /:categories/:year/:title/
+permalink: /:title/
 markdown: kramdown
 highlighter: rouge
 
 # Plugins
 paginate: 5
 paginate_path: "/:num/"
+exclude:
+  - '*.ini'

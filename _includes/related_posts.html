@@ -26,10 +26,10 @@
         {% unless post.tags contains 'draft' %}
         <p class="no_space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ category }} </a></p>
         <p class="no_space post-meta"><i class="fa fa-tags"></i>{{ post.categories | join: ', ' }}</p>
-        <p class="no_space">{{post.excerpt}}</p>
+        <!-- <p class="no_space">{{post.excerpt}}</p> -->
         {% endunless %}
 
-      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 2 %}
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}
       {% endif %}
