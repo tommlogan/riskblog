@@ -9,3 +9,5 @@ _site
 _posts/2018-06-29-crop-price-forecasting.md
 _drafts/2018-06-29-crop-price-forecasting.md
 assets/blog/2018-06-29-crop-price-forecasting/**
+
+.jekyll-cache

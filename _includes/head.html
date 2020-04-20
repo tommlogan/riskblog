@@ -38,30 +38,8 @@
    <meta name="twitter:card" content="summary_large_image" />
    <meta name="twitter:creator" content="@chronotope" />
    <meta name="twitter:title" content="{{page.title}}" />
-  {% if page.ogimagenull %}
-   <!-- no og image -->
-  {% elsif page.ogimage %}
-   <meta property="og:image" content="{{page.ogimage}}" />
-     <meta name="twitter:image" content="{{page.ogimage}}" />
-     <meta property="og:image:width" content="600" />
-     <meta property="og:image:height" content="315" />
-  {% elsif page.image %}
-     <meta property="og:image" content="{{ page.image }}" />
-     <meta name="twitter:image" content="{{ page.image }}" />
-   {% else %}
-     <meta property="og:image" content="{{ site.image }}" />
-     <meta name="twitter:image" content="{{ site.image }}" />
-   {% endif %}
 
-  {% else %}
-   <!-- OG data for homepage -->
-   <meta property="og:image" content="{{ site.image }}" />
-   <meta property="og:type" content="website" />
-   <meta name="twitter:card" content="summary" />
-   <meta name="twitter:title" content="{{site.title}}" />
-   <meta name="twitter:image" content="{{ site.image }}" />
-
-  {% endif %}
+  {% include og.html %}
 
   {% include favicon.html %}
 
