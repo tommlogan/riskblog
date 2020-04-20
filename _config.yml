@@ -19,7 +19,7 @@ email: tom@reckoningrisk.com
 description: >- # this means to ignore newlines until "baseurl:"
   A risk and science blog by young risk scientists
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://www.reckoningrisk.com  # the base hostname & protocol for your site, e.g. http://example.com
+url: https://reckoningrisk.com  # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: TomMLogan
 # github_username:  tommlogan
 # linkedin_username: tom-logan-4b262a5b/
