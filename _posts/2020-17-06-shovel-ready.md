@@ -10,4 +10,4 @@ comments: false
 
 >Research shows communities become more resilient to future crises when people have access to basic services such as supermarkets, hospitals and schools.
 
-Read the article [here](https://theconversation.com/shovel-ready-projects-ignore-important-aspects-of-community-resilience-139850).
+Read the article at [The Conversation](https://theconversation.com/shovel-ready-projects-ignore-important-aspects-of-community-resilience-139850).
