@@ -19,7 +19,7 @@ Also, I believe that these skills are an essential thing to learn, whether we pl
 # Workshop and slides
 I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.ppsx)
 
-<button name="button" onclick="/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.ppsx">Slides available here</button>
+{% include button.html button_name="Slides available here" button_class="outline-primary" url="/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.ppsx" %}
 
 The blog below is really a complement to the slides, rather than stand alone, so check them out!
 
