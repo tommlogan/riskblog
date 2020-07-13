@@ -17,9 +17,9 @@ Well, I got a bit sick of that feeling and have learnt some techniques which my 
 Also, I believe that these skills are an essential thing to learn, whether we plan on becoming academics, valley entrepreneurs, or other consultants - the internet is not going anyway, we will be collaborating in teams on code, and preparing ourselves for this is only to our advantage.
 
 # Workshop and slides
-I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.ppsx)
+I'm presenting a workshop for the INFORMS student chapter at the University of Michigan (Institute of Operations Research and Management Science) and the slides are available [HERE.](https://drive.google.com/file/d/1vVikBwNqnZoYAiBpnnncXJpwaABx87-M/view?usp=sharing)
 
-{% include button.html button_name="Slides available here" button_class="outline-primary" url="/assets/blog/2018-01-31-better-coding-practices/informs_better-coding-practices.ppsx" %}
+{% include button.html button_name="Slides available here" button_class="outline-primary" url="https://drive.google.com/file/d/1vVikBwNqnZoYAiBpnnncXJpwaABx87-M/view?usp=sharing" %}
 
 The blog below is really a complement to the slides, rather than stand alone, so check them out!
 
