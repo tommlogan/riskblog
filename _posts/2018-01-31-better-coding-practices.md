@@ -12,7 +12,7 @@ toc: true
 Have you ever had to revisit a coding project? If you're like me, there's a sense of trepidation. Will I remember what I was doing? Will it still work?  
 They say that your closest collaborator is your past self, except she/he doesn't respond to emails...
 
-Well, I got a bit sick of that feeling and have learnt some techniques which my future self will be thankful for (or darn well better be). And that's what I want to share with you. Note that many of these are adapted from [Jeff Leek's book, *How to be a Modern Scientist*](http://jtleek.com/book/).  
+Well, I got a bit sick of that feeling and have learnt some techniques which my future self will be thankful for (or darn well better be). And that's what I want to share with you. Note that many of these are adapted from [Jeff Leek's book, *How to be a Modern Scientist*](http://jtleek.com/books/).  
 
 Also, I believe that these skills are an essential thing to learn, whether we plan on becoming academics, valley entrepreneurs, or other consultants - the internet is not going anyway, we will be collaborating in teams on code, and preparing ourselves for this is only to our advantage.
 
