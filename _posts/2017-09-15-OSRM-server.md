@@ -8,6 +8,6 @@ categories: coding
 comments: true
 ---
 
-A newer, faster approach is available here: https://urutau.co.nz/how-to/osrm_how_to/.
+A newer, faster approach is available here: https://urutau.co.nz/how-to/osrm/.
 
 <iframe width="100%" height="2500" src="/assets/blog/2017-09-15-OSRM-server/building_osrm.html" frameborder="0" allowfullscreen></iframe>
